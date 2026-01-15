@@ -1,0 +1,168 @@
+/* ================================================================
+   TITANFIT V2 - DESIGN TOKENS
+   Luxury Gold Theme | Minimalist | Professional
+   ================================================================ */
+
+:root {
+    /* ============================================================
+     COLOR PALETTE
+     ============================================================ */
+
+    /* Primary - Luxury Gold */
+    --gold-primary: #D4AF37;
+    --gold-light: #F5C518;
+    --gold-dark: #B8860B;
+    --gold-glow: rgba(212, 175, 55, 0.3);
+    --gold-subtle: rgba(212, 175, 55, 0.1);
+
+    /* Neutral - Light (Default backgrounds) */
+    --light-50: #FFFFFF;
+    --light-100: #FAFAFA;
+    --light-200: #F1F5F9;
+    --light-300: #E2E8F0;
+    --light-400: #94A3B8;
+
+    /* Neutral - Dark (For text and contrast) */
+    --dark-900: #0F172A;
+    --dark-800: #1E293B;
+    --dark-700: #334155;
+    --dark-600: #475569;
+    --dark-500: #64748B;
+
+    /* Semantic Colors */
+    --success: #10B981;
+    --error: #EF4444;
+    --warning: #F59E0B;
+    --info: #3B82F6;
+
+    /* ============================================================
+     GRADIENTS
+     ============================================================ */
+
+    --gradient-gold: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-light) 100%);
+    --gradient-gold-subtle: linear-gradient(135deg, var(--gold-primary) 0%, #E5C55A 100%);
+    --gradient-gold-radial: radial-gradient(circle, var(--gold-light) 0%, var(--gold-primary) 100%);
+
+    --gradient-dark: linear-gradient(180deg, var(--dark-900) 0%, var(--dark-800) 100%);
+    --gradient-dark-subtle: linear-gradient(135deg, var(--dark-800) 0%, var(--dark-700) 100%);
+    --gradient-dark-radial: radial-gradient(ellipse at top, var(--dark-800) 0%, var(--dark-900) 100%);
+
+    /* ============================================================
+     TYPOGRAPHY
+     ============================================================ */
+
+    /* Font Weights */
+    --weight-normal: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-black: 900;
+
+    /* Font Sizes */
+    --text-xs: 0.75rem;
+    /* 12px */
+    --text-sm: 0.875rem;
+    /* 14px */
+    --text-base: 1rem;
+    /* 16px */
+    --text-lg: 1.125rem;
+    /* 18px */
+    --text-xl: 1.25rem;
+    /* 20px */
+    --text-2xl: 1.5rem;
+    /* 24px */
+    --text-3xl: 1.875rem;
+    /* 30px */
+    --text-4xl: 2.25rem;
+    /* 36px */
+    --text-5xl: 3rem;
+    /* 48px */
+    --text-6xl: 3.75rem;
+    /* 60px */
+
+    /* Line Heights */
+    --leading-tight: 1.25;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.75;
+
+    /* ============================================================
+     SPACING
+     ============================================================ */
+
+    --space-1: 0.25rem;
+    /* 4px */
+    --space-2: 0.5rem;
+    /* 8px */
+    --space-3: 0.75rem;
+    /* 12px */
+    --space-4: 1rem;
+    /* 16px */
+    --space-5: 1.25rem;
+    /* 20px */
+    --space-6: 1.5rem;
+    /* 24px */
+    --space-8: 2rem;
+    /* 32px */
+    --space-10: 2.5rem;
+    /* 40px */
+    --space-12: 3rem;
+    /* 48px */
+    --space-16: 4rem;
+    /* 64px */
+    --space-20: 5rem;
+    /* 80px */
+    --space-24: 6rem;
+    /* 96px */
+
+    /* ============================================================
+     BORDER RADIUS
+     ============================================================ */
+
+    --radius-sm: 0.375rem;
+    /* 6px */
+    --radius-md: 0.5rem;
+    /* 8px */
+    --radius-lg: 0.75rem;
+    /* 12px */
+    --radius-xl: 1rem;
+    /* 16px */
+    --radius-2xl: 1.5rem;
+    /* 24px */
+    --radius-full: 9999px;
+    /* Pill */
+
+    /* ============================================================
+     SHADOWS
+     ============================================================ */
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --shadow-gold: 0 0 20px var(--gold-glow);
+    --shadow-gold-lg: 0 0 30px var(--gold-glow);
+    --shadow-gold-xl: 0 0 40px var(--gold-glow);
+
+    /* ============================================================
+     TRANSITIONS
+     ============================================================ */
+
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slower: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ============================================================
+     Z-INDEX LAYERS
+     ============================================================ */
+
+    --z-base: 0;
+    --z-dropdown: 1000;
+    --z-sticky: 1100;
+    --z-fixed: 1200;
+    --z-modal-backdrop: 1300;
+    --z-modal: 1400;
+    --z-popover: 1500;
+    --z-tooltip: 1600;
+}

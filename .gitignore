@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.expo/
+.next/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+
+# Misc
+.cache/
+
+# Git backup
+.git_backup_corrupt/

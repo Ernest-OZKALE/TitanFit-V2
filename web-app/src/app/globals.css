@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 45 60% 50%;
+  /* Gold #D4AF37 approx */
+  --primary-foreground: 0 0% 0%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.75rem;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- PREMIUM INTERACTIONS SYSTEM (No Underlines) --- */
+
+/* Global Smooth Transitions */
+* {
+  transition-property: color, background-color, border-color, transform, box-shadow, opacity, filter;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* Snappy but smooth */
+}
+
+/* Premium Button Base */
+button,
+.button,
+[role="button"] {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  /* Hardware accel */
+}
+
+/* Hover Effect: Lift & Glow (No Underline) */
+button:hover,
+.button:hover,
+[role="button"]:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.5),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(212, 175, 55, 0.3);
+  /* Gold glow */
+}
+
+/* Liquid Titanium Gradient - Gold/Dark */
+.gradient-bg {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #B8860B 100%);
+  background-size: 200% 200%;
+  animation: gradient-move 10s ease infinite;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
