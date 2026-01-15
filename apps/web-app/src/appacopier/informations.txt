@@ -1,0 +1,720 @@
+### Points Clés
+- **Fonctionnalités Principales** : Bevel est une application iOS tout-en-un pour la santé, intégrant des données de wearables comme Apple Watch, Garmin et bientôt Oura. Elle offre des scores pour le sommeil, la récupération, la tension, le stress, la nutrition (qualité des aliments), et inclut un builder de force, un suivi de cycle menstruel, un journal d'habitudes, et un "Energy Bank" pour l'énergie quotidienne. La plupart sont gratuites depuis décembre 2025, sauf l'IA Bevel Intelligence.
+- **Utilité** : Elle analyse les données pour des insights personnalisés, aidant à optimiser l'entraînement, le repos et l'alimentation sans deviner. Idéale pour les athlètes ou ceux cherchant une vue holistique, mais des inexactitudes occasionnelles existent (ex. : scores de stress surévalués).
+- **Prix et Modèle** : Gratuite pour les fonctionnalités de base ; abonnement pour l'IA (5,99 €/mois ou 49,99 €/an, avec hausses potentielles en 2026). Pas d'équivalent Android officiel.
+- **Forces et Limites** : Interface élégante et intégrations solides ; cependant, certaines parties (comme l'entraînement de force) semblent moins polies que des apps dédiées, et des bugs de sync persistent.
+- **Controverses** : Les recherches suggèrent que les scores sont généralement fiables mais subjectifs ; des utilisateurs notent des redondances avec Apple Health, et l'IA payante est vue comme un "coût supplémentaire" par certains.
+
+### Aperçu Général
+Bevel, souvent appelée "The Everything Health App", est conçue pour transformer les données de santé brutes en insights actionnables. Elle cible les utilisateurs d'Apple Watch ou Garmin cherchant à éviter plusieurs apps. Basée sur des algorithmes scientifiques, elle connecte sommeil, nutrition, fitness et stress pour des recommandations quotidiennes. Des mises à jour récentes (comme le suivi de cycle menstruel) la rendent plus inclusive, mais elle reste iOS-only.
+
+### Comment Ça Marche
+L'app puise dans Apple Health ou Garmin Connect pour analyser des métriques comme le HRV (variabilité cardiaque), la VO2 max, et les stades de sommeil. Les scores (ex. : Recovery Score) guident si vous devez pousser ou reposer. L'enregistrement est simple via scan barcode, photo d'aliments ou génération d'entraînements AI. Gratuite depuis fin 2025, elle a levé 10M$ en Série A pour étendre ses intégrations.
+
+### Avis Utilisateurs
+Les retours sont majoritairement positifs sur l'UI "calme et premium", avec des notes moyennes de 4,8/5 sur l'App Store (basé sur des milliers d'avis). Les pros incluent la consolidation de données ; les cons : bugs occasionnels (ex. : chargement lent) et scores parfois imprécis. Des utilisateurs sur Reddit et X louent son utilité pour les non-diabétiques avec CGM, mais critiquent la dépendance à l'abonnement pour l'IA.
+
+---
+
+Bevel est une application mobile iOS développée par une startup américaine, lancée initialement en 2023 et ayant connu une croissance rapide, avec des centaines de milliers d'utilisateurs d'ici 2026. Fondée par Grey Nguyen (CEO visible sur X), elle a levé 10 millions de dollars en Série A en octobre 2025 auprès de General Catalyst, pour accélérer le développement d'intégrations et d'IA. Positionnée comme un "compagnon AI pour le potentiel humain", Bevel vise à rendre la santé proactive et personnalisée, en reliant des données silotées (wearables, labs, habitudes) dans un système connecté. Elle est compatible principalement avec l'écosystème Apple (Watch, Health), Garmin Connect, et bientôt Oura, mais n'a pas de version Android officielle – des recherches sur des forums comme Reddit confirment que des alternatives Android comme Google Fit ou Samsung Health offrent des fonctionnalités similaires, sans l'intégration AI de Bevel.
+
+#### Fonctionnalités Complètes et Détails Techniques
+Bevel couvre tous les piliers de la santé : sommeil, récupération, nutrition, fitness, stress, et habitudes. Voici une liste exhaustive, basée sur le site officiel, l'App Store, des reviews YouTube, Reddit, et posts X :
+
+1. **Scores et Métriques Principaux** (Gratuits) :
+   - **Recovery Score** : Évalue la readiness quotidienne via HRV, cœur au repos, et sommeil. Aide à éviter le surentraînement ou les blessures.
+   - **Sleep Score** : Analyse stades (REM, profond), durée, interruptions. Inclut un Smart Alarm qui réveille au moment optimal.
+   - **Strain Score** : Mesure l'effort corporel, personnalisé selon récupération et sommeil. Inclut zones de fréquence cardiaque pour cardio.
+   - **Stress Score** : Suivi en temps réel pendant sommeil, workouts, et vie quotidienne. Identifie déclencheurs (ex. : caféine tardive).
+   - **Nutrition Score** : Focalisé sur qualité (récompense légumes, fruits, grains entiers ; pénalise viandes transformées, sucre excessif). Base de 6M+ aliments.
+   - **Energy Bank** : "Batterie corporelle" combinant récupération, sommeil, strain, et stress pour évaluer l'énergie.
+   - **Biology** : Suivi VO2 max, HRV, composition corporelle (masse maigre, graisse), tendances sur temps.
+
+2. **Nutrition et Logging** :
+   - Enregistrement via scan barcode, recherche image, description vocale, recettes personnalisées, ou base de données.
+   - Objectifs calories/macros/nutriments ; suivi glucose (CGM) pour impacts métaboliques.
+   - Analyse qualité : Contributeurs positifs/negatifs, avec pénalités pour repas tardifs affectant sommeil.
+   - Intégration avec photos d'étiquettes pour logging rapide.
+
+3. **Fitness et Entraînement** :
+   - **Strength Builder** : 700+ exercices, sync live entre watch/phone, supersets, workouts AI-générés (ex. : plan upper body en 30 min avec équipement maison).
+   - Suivi strain musculaire, progression force (1RM calculé sur 14 jours).
+   - Cardio Load : Au-delà des minutes/miles, basé sur effort cardiaque.
+   - Génération plans personnalisés ; logging workouts passés.
+
+4. **Suivi Féminin et Cycle** :
+   - Cycle Tracking : Sync 1:1 avec Apple Health pour flux, symptômes, contraception (8 types).
+   - Prédictions phases (période, folliculaire, ovulatoire, lutéale) via données historiques et température.
+   - Tendances HRV, cœur au repos, température par phase ; pauses automatiques si irrégulier.
+
+5. **Journal et Habitudes** :
+   - Logging hydration, soleil, écran, humeur, productivité, etc.
+   - Insights sur impacts (ex. : habitudes affectant sommeil).
+   - Rappels nocturnes ; auto-check (ex. : 10 000 pas via wearable).
+
+6. **Bevel Intelligence (Payant)** :
+   - AI compagnon : Connecte données pour feedbacks instantanés, recommandations (ex. : quand entraîner/reposer).
+   - Mémoire core pour insights personnalisés ; chat pour questions (ex. : "Pourquoi mon HRV est bas ?").
+   - Prédictions, guidage objectifs ; réduit hallucinations via améliorations récentes.
+
+7. **Intégrations et Compatibilités** :
+   - Apple Health/Watch : Données sommeil, workouts, HRV, température.
+   - Garmin Connect : Sync historique (1 mois), mais manques (ex. : pas de HRV diurne ou calories au repos).
+   - Oura : Intégration directe en développement (actuellement via shortcuts, mais fin des tokens en 2025).
+   - CGM : Insights pour non-diabétiques (ex. : réactions à aliments).
+   - Autres : Strava, MyFitnessPal (via Apple Health) ; support double-tap/Action Button pour sets.
+
+8. **Autres Outils** :
+   - Calendrier coloré workouts ; timelines activités.
+   - Export données ; thèmes saisonniers (ex. : hiver 2026).
+   - Support langues multiples ; optimisations iOS 18+ (ex. : Camera Control pour photos aliments).
+
+#### Comment Ça Marche en Détail
+Bevel fonctionne comme un "OS intelligent pour la santé" : 
+- **Collecte Données** : Via API (Garmin, Apple) ou manuel (journal, nutrition).
+- **Analyse** : Algorithmes scientifiques calculent scores (ex. : Strain via effort cardiaque ; Nutrition via guidelines globales comme OMS).
+- **Insights** : Comparaisons baselines (ex. : sommeil vs. mois dernier) ; tips (ex. : "Repas léger avant lit pour digestion").
+- **Personnalisation** : Status (malade/actif) ajuste scores ; IA (payante) utilise contexte (ex. : cycle menstruel) pour conseils.
+- **UI/UX** : Design "Liquid Glass" minimaliste, gradients doux ; onboarding post-paywall explique piliers.
+- **Performances** : Chargement rapide, mais bugs occasionnels (ex. : sync coincé, crashes sur watch).
+
+#### Prix, Modèle Économique et Évolutions
+- **Gratuit Depuis Décembre 2025** : Tout sauf IA, incluant données historiques, nutrition, strength, alarmes. Raison : Accessibilité (coûts AI élevés) ; vidéo annonce sur YouTube/X.
+- **Abonnement** : 5,99 €/mois ou 49,99 €/an pour Bevel Intelligence ; abonnés actuels "grandfathered" en 2026 avec "Bevel 3.0" (nouvelles features payantes, hausse prix possible).
+- **Financement** : Levée 10M$ pour équipe/expansions ; monétisation via IA premium.
+
+#### Avis et Expériences Utilisateurs (Synthèse de Sources)
+- **Positifs** (de X, Reddit, App Store, YouTube) : "Meilleur app santé gratuite" (Stetson Doggett sur X) ; UI "stunning et calming" (Matteo Spada sur X) ; utile pour consolidation (ex. : Cole Bemis loue tracking qualité aliments). Sur Reddit, insights CGM aident non-diabétiques à voir réactions (ex. : à caféine). Notes 4,8/5 sur App Store (3K+ avis) ; "Génial pour Apple Watch sans Whoop" (Brian Sutterer MD sur X).
+- **Négatifs** : Redondant avec Apple Health (ex. : review YouTube annule abonnement car features gratuites ailleurs) ; bugs (sync Garmin dupliqués, stress toujours rouge – Reddit) ; logging lourd (trop clics pour nourriture – Reddit) ; strength "non poli" vs. apps dédiées comme Hevy. Sur X, un utilisateur critique "design confus et bloat" (Alex Kehr).
+- **Suggestions** : Interface web (Reddit) ; tracking Omega 3/6 (Reddit) ; reps in reserve optionnel (Reddit) ; intégration FitMenu (Reddit).
+
+#### Comparaisons avec Apps Similaires
+Bevel se compare à Whoop/Oura pour dashboards, mais gratuit pour Apple Watch users. Vs. Athlytic : Similaire consolidation, mais Bevel + nutrition/IA. Vs. MyFitnessPal : Meilleur logging aliments, mais payant pour premium. Des reviews YouTube notent qu'elle remplace plusieurs apps (Strava, Lifesum), mais pas unique si vous avez déjà un écosystème.
+
+| Fonctionnalité | Bevel (Gratuit) | Bevel (Payant) | Whoop | Oura | Apple Health |
+|---------------|-----------------|----------------|-------|------|--------------|
+| Scores (Sleep/Recovery/Strain/Stress) | Oui | Oui + IA | Oui | Oui | Basique |
+| Nutrition Logging/Score | Oui | Oui + Insights | Non | Non | Basique |
+| Strength Builder | Oui | Oui + AI Plans | Non | Non | Non |
+| Cycle Tracking | Oui | Oui | Oui | Oui | Oui |
+| Intégrations Wearables | Apple/Garmin | Idem | Propriétaire | Propriétaire | Apple |
+| Prix | Gratuit | 5,99€/mois | 30€/mois | 5,99€/mois | Gratuit |
+
+#### Développement et Mises à Jour Récentes
+- **2025 Été** : 63 features, incluant Bevel Intelligence, nutrition améliorée, strength sync.
+- **Décembre 2025** : Gratuité ; Garmin intégration, cycle tracking, nutrition redesign.
+- **Janvier 2026** : Améliorations UI (Liquid Glass), perf loading ; fixes bugs (ex. : chat IA, sync baselines).
+- Roadmap : Oura direct ; plus plateformes (potentiel Android ? Non confirmé).
+
+#### Utilité pour Votre Projet
+Puisque vous développez une app similaire, Bevel excelle en consolidation (réduisant jonglage apps) et UI premium, mais pèche par bugs et redondances. Priorisez intégrations sécurisées (comme sync 1:1 Apple Health pour privacy) et gratuité core pour attirer users. Des posts Reddit soulignent besoin d'export données/web pour efficacité.
+
+#### Key Citations
+- [Bevel Official Website](https://www.bevel.health/)
+- [App Store Page](https://apps.apple.com/us/app/bevel-all-in-one-health-app/id6456176249)
+- [Lifehacker Article on Free Model](https://lifehacker.com/health/bevel-the-app-that-turns-your-apple-watch-into-a-whoop-is-now-free)
+- [Reddit r/bevelhealth Discussions](https://www.reddit.com/r/bevelhealth/)
+- [YouTube Review: Is This The Best All-In-One Fitness App?](https://www.youtube.com/watch?v=4hGms6Mp-1U)
+- [YouTube: BEVEL The All-In-One Fitness App Is Now FREE](https://www.youtube.com/watch?v=_ojPI8TpFC8)
+- [X Official Account Posts](https://x.com/bevel_health)
+
+
+
+
+
+
+
+
+Excellent ! J'ai créé une recherche ultra-complète et approfondie de Bevel. Voici un **résumé exécutif** en français:
+
+***
+
+## 📊 RÉSUMÉ ULTRA-COMPLET DE BEVEL - THE EVERYTHING HEALTH APP
+
+### **QU'EST-CE QUE C'EST?**
+Bevel est une **application holistique de santé et de performance** fondée en 2023 qui transforme les données de santé en insights personnalisés et actionnables. C'est la plus grande concurrente de WHOOP mais à 1/6ème du prix.
+
+***
+
+### **🎯 3 PILIERS PRINCIPAUX**
+1. **SOMMEIL** - Sleep Score + Smart Alarm
+2. **EXERCICE** - Strength Builder (700+ exercices) + Cardio Load
+3. **NUTRITION** - Nutrition Score + Photo Logging + Glucose (CGM)
+
+***
+
+### **💰 TARIFICATION (Janvier 2026)**
+- **GRATUIT:** Tous les features sauf Intelligence IA
+- **PAYANT:** $9.99/mois OU $79.99/an pour Intelligence IA uniquement
+
+**C'est un changement MAJEUR:** Décembre 2025, Bevel a supprimé tous les paywalls et rendu l'appli 100% gratuite!
+
+***
+
+### **🏗️ TOUS LES SCORES DISPONIBLES (FREE)**
+
+| Score | Qu'est-ce que c'est |
+|-------|-------------------|
+| **Recovery Score** | Votre "readiness" quotidienne pour performer (0-100) |
+| **Sleep Score** | Qualité du sommeil (stages, durée, interruptions) |
+| **Strain Score** | Effort total du corps (Active + Passive strain) |
+| **Nutrition Score** | Impact du repas sur votre métabolisme |
+| **Stress Score** | Niveau de stress en temps réel (0-100) |
+| **Energy Bank** | "Batterie" du corps (combine tous les scores) |
+| **Biology Dashboard** | VO2 Max, HRV, Fréquence cardiaque, Composition, SpO2 |
+
+***
+
+### **🏋️ STRENGTH BUILDER - FITNESS TRACKING**
+- **700+ exercices** avec vidéos + instructions
+- **Supersets/Circuits** support
+- **Live Sync:** Start on phone, edit on watch (or vice-versa)
+- **Auto-import** from other apps
+- **Muscular Strain** feedback real-time
+- **Progression tracking** complet
+
+***
+
+### **🥗 NUTRITION TRACKING - COMPLET**
+
+**Methods de Logging:**
+- 📸 Photo AI recognition (« Describe your meal »)
+- 📷 Barcode scanning
+- 🔍 Database search (6+ millions foods)
+- 📝 Custom recipes
+- 🗣️ Voice description
+
+**Features:**
+- Macros/Calories/Nutriments
+- **CGM Integration** (Dexcom/Libre) = Real-time glucose response
+- Net carbs tracking
+- Pattern detection (late-night snacking, diet types)
+- Connects to Sleep/Recovery impact
+- **AI Nutrition Score** per meal (NEW 2025)
+
+***
+
+### **📱 JOURNAL TRACKING**
+Log behaviors que impactent la santé:
+- Hydration
+- Sunlight exposure  
+- Screen time
+- Custom activities
+- Shows patterns + connections à Sleep/Recovery
+
+***
+
+### **🔗 INTÉGRATIONS & DEVICES**
+
+**Wearables Support:**
+- ✅ Apple Watch (primary - native app)
+- ✅ Garmin Watches (NEW integration 2025 - full API)
+- ✅ Amazfit (via Apple Health)
+- ✅ Smart Rings (support)
+
+**Health Data:**
+- ✅ Apple Health (primary source)
+- ✅ Dexcom (CGM - direct integration)
+- ✅ Libre (CGM - direct integration)
+- ✅ Third-party workout apps (import capability)
+
+**Multi-Device:** Vous pouvez utiliser Apple Watch + Garmin ensemble!
+
+***
+
+### **🤖 BEVEL INTELLIGENCE (Paid Option)**
+L'IA engine qui offre:
+- Chat conversationnel avec vos données
+- Smart Summaries automatiques
+- Coaching personnalisé
+- Breakdown des trends
+- Contexte et explanations
+
+**MAIS:** Vous pouvez utiliser 100% des features sans payer pour Intelligence!
+
+***
+
+### **📊 LATEST FEATURES (2025)**
+
+#### **Fall Release (Sept 2025):**
+- ✨ Cycle Tracking (menstrual cycle)
+- ✨ Garmin Integration (full native)
+- ✨ AI Nutrition Score redesign
+
+#### **Summer Release (June 2025):**
+- ✨ Live Sync (phone ↔ watch)
+- ✨ Custom food creation
+- ✨ Recipe import with AI
+- ✨ New HR zone methods
+- ✨ 1+ year data visibility
+- ✨ Improved algorithms (Sleep, Strain)
+- ✨ Italian + Vietnamese languages
+
+***
+
+### **⚡ COMPARAISON VS CONCURRENTS**
+
+| App | Price | Wearable | Watch App | Nutrition | Libre? |
+|-----|-------|----------|-----------|-----------|--------|
+| **Bevel** | FREE (AI $9.99/mo) | Non requis | ✅ Native | ✅ Excellent | ✅ Oui |
+| **WHOOP** | $239/year | $99 device | ❌ Non | ❌ Non | ❌ Non |
+| **Oura** | $15-30/mo | $300 ring | ❌ Non | ❌ Non | ❌ Non |
+| **Garmin Connect** | Gratuit | Garmin only | ✅ | ❌ Non | ❌ Non |
+| **Athlytic** | $10-15/mo | Apple Watch | ✅ | ❌ Basique | ❌ Non |
+
+**Bevel wins sur:** Prix, nutrition, multi-device, watch app, CGM support
+
+***
+
+### **🎯 CAS D'USAGE PRINCIPAUX**
+
+1. **Prévenir le surmenage** - Recovery score guide l'intensité
+2. **Optimiser le sommeil** - Smart alarm + analysis
+3. **Gérer la nutrition** - Photo logging + glucose feedback
+4. **Tracker la performance** - Tous les metrics centralisés
+5. **Identifier les patterns** - 1+ year de données + trends
+6. **Build habits** - Journal + pattern recognition
+7. **Longevité** - Biology dashboard + biomarkers
+
+***
+
+### **🎓 UI/UX HIGHLIGHTS**
+
+- Très polished (launched 2024)
+- Dark mode + Light mode
+- Customizable dashboard
+- Clean navigation
+- Smooth animations
+- Responsive on phone + watch
+- Updated régulièrement
+
+***
+
+### **📈 MARCHÉ & POSITION**
+
+**Founder:** Grey Nguyen (CEO) + Ben Yang (CTO)
+**Based:** New York
+**Funded:** General Catalyst, South Park Commons (Feb 2025)
+**Status:** Growing fast, 2.4K+ ratings on App Store
+**Trend:** Vers version 3.0 avec nouveau "Pro" tier
+
+***
+
+### **⚠️ LIMITATIONS**
+
+- iOS only (no Android announced)
+- Requires Apple Watch ou compatible device
+- Garmin integr requires setup
+- Proprietary algorithms (black box)
+- No family plan
+
+***
+
+### **📋 FICHIER COMPLET CRÉÉ**
+
+J'ai créé un document **937 lignes ultra-détaillé** avec:
+
+✅ Architecture complète
+✅ Tous les scores + calculs
+✅ Tous les features
+✅ Toutes les intégrations
+✅ Roadmap future
+✅ Comparaisons détaillées
+✅ Cas d'usage
+✅ Ressources officielles
+✅ Timeline d'adoption
+✅ Tout pour créer une app similaire
+
+**Fichier:** `bevel_app_complete_research.md` (ready in workspace)
+
+***
+
+## 🎯 **POUR VOTRE APP SIMILAIRE - LES ÉLÉMENTS CLÉS À REPRODUIRE:**
+
+1. **Holistic approach** (sleep + exercise + nutrition ensemble)
+2. **Real-time scores** (Recovery, Strain, Sleep, Nutrition, Stress)
+3. **Multi-device support** (ne pas être limité à un wearable)
+4. **AI food logging** (photo recognition + 6M+ database)
+5. **CGM integration** (glucose = data)
+6. **Live watch sync** (edit on phone or watch)
+7. **Polished UX** (très important - c'est un success factor)
+8. **Free core + paid AI** (good business model)
+9. **Community feedback** (roadmap-driven)
+10. **Wearable data normalization** (normaliser données d'Apple, Garmin, etc.)
+
+Vous avez maintenant **TOUT** ce que Bevel propose! 🎯
+
+
+
+Analyse Technique et Fonctionnelle Exhaustive : Bevel - The Everything Health App
+1. Résumé Exécutif et Positionnement Stratégique
+1.1 Objectif et Portée du Rapport
+Ce document constitue une analyse technique, fonctionnelle et stratégique complète de l'application Bevel - The Everything Health App, développée par Finerpoint, Inc..1 L'objectif est de fournir un plan directeur détaillé pour le développement d'une application concurrente, en déconstruisant l'architecture, les algorithmes propriétaires, les stratégies de monétisation et l'expérience utilisateur de Bevel.
+L'analyse met un accent particulier sur le pivot stratégique majeur opéré par Bevel fin 2025/début 2026 : la transition d'un modèle "concurrent de Whoop" purement payant vers un modèle freemium centré sur l'intelligence artificielle.2 Elle examine comment Bevel exploite les capteurs existants (Apple Watch, Garmin) pour démocratiser des métriques auparavant réservées aux matériels propriétaires coûteux.
+1.2 Proposition de Valeur : Le "Dégroupage" du Wearable
+La thèse centrale de Bevel repose sur le découplage entre l'analyse de santé avancée et le matériel propriétaire. Contrairement à des concurrents comme Whoop ou Oura, qui obligent l'utilisateur à acheter un bracelet ou une bague spécifique, Bevel capitalise sur la suite de capteurs de l'Apple Watch (et plus récemment des appareils Garmin) pour fournir des informations de qualité professionnelle.1
+L'application se positionne comme une solution "Tout-en-un", consolidant des fonctionnalités qui nécessitent généralement trois à quatre abonnements distincts :
+Suivi du Sommeil (ex: Sleep Cycle, AutoSleep).
+Analyse de l'Effort/Strain (ex: Whoop, Athlytic).
+Journal Nutritionnel (ex: MyFitnessPal, Cronometer).
+Entraînement de Force/Musculation (ex: Hevy, Strong).4
+1.3 Le Pivot "AI-First" (Stratégie 2025-2026)
+Une observation critique pour tout développeur entrant sur ce marché est la décision de Bevel de rendre ses métriques de base gratuites tout en verrouillant son Intelligence Artificielle (Bevel Intelligence) derrière un abonnement.2 Cela indique une commoditisation de la visualisation des données brutes (graphiques VFC, phases de sommeil) et une valorisation premium de l'interprétation (coaching via LLM).
+2. Architecture Système et Écosystème de Données
+2.1 Le Modèle "Hub-and-Spoke" d'Apple HealthKit
+Bevel fonctionne principalement comme une interface de lecture/écriture sophistiquée pour Apple HealthKit (Santé). Elle n'agit pas comme un silo de données isolé, mais se synchronise profondément avec la base de données locale de l'appareil.
+Opérations de Lecture : Bevel ingère les échantillons bruts provenant des capteurs de l'Apple Watch, incluant :
+Fréquence Cardiaque (FC) : Mesures battement par battement pour les calculs de VFC.
+Variabilité de la Fréquence Cardiaque (VFC/HRV) : Spécifiquement le SDNN et le rMSSD (Root Mean Square of Successive Differences).7 Le rMSSD est privilégié pour évaluer l'activité parasympathique et la récupération.
+Phases de Sommeil : Segments REM, Core, Deep, et Éveil générés par watchOS.
+Énergie Active : Calories brûlées.
+Fréquence Respiratoire & Oxygène Sanguin (SpO2).
+Glucose : Données provenant de CGM (Dexcom, Libre, Lingo) écrites dans HealthKit et lues par Bevel pour le "Score d'Impact Glycémique".9
+Opérations d'Écriture : Bevel réinjecte les données traitées dans HealthKit, assurant l'interopérabilité.
+Entraînements : Les sessions de force et de cardio enregistrées dans Bevel apparaissent dans Apple Fitness.
+Nutrition : Les macro et micronutriments saisis dans Bevel sont écrits dans Apple Health.9
+Composition Corporelle : Estimations de poids et de masse maigre.1
+Insight pour le Développeur : Cette architecture réduit drastiquement les coûts de stockage cloud ("Serverless" pour les données biométriques) et renforce la confidentialité. Les snippets confirment qu'aucune donnée de santé n'est envoyée aux serveurs de Bevel, sauf si l'utilisateur active les fonctionnalités d'IA optionnelles.13 Tout le traitement biométrique brut (calculs de Strain, Energy Bank) se produit localement sur l'appareil (Edge Computing).13
+2.2 Intégration Garmin Connect
+Depuis fin 2025, Bevel a dépassé l'écosystème Apple pour supporter les appareils Garmin.14
+Implémentation : Intégration directe via l'API Garmin Connect™.
+Synchronisation : Importation jusqu'à 1 mois d'historique lors de l'initialisation.
+Limitations Techniques : En raison des restrictions de l'API Garmin, Bevel ne peut pas importer la Température, la VFC diurne (Daytime HRV), le temps d'endormissement, ou le RPE (Rate of Perceived Exertion) des entraînements Garmin.15
+Gestion des Conflits : Le système inclut une logique pour empêcher les doublons si un utilisateur a à la fois Garmin Connect écrivant dans Apple Health et Bevel lisant directement depuis Garmin. Le système conseille aux utilisateurs de désactiver les sources de données "Connect" dans Apple Health pour éviter un "double comptage" de l'effort.15
+2.3 Confidentialité et Stratégie de Stockage des Données
+Bevel utilise un modèle de stockage hybride :
+Local-First (Core App) : Les données biométriques (VFC, Sommeil, Entraînements) résident dans Apple Health et le stockage local de l'application. Elles ne sont pas téléchargées sur les serveurs de Finerpoint, assurant la conformité HIPAA/GDPR par minimisation.13
+Cloud-Assisted (Bevel Intelligence) : Si l'utilisateur opte pour l'IA, les "informations pertinentes minimales" sont transmises à des fournisseurs tiers (probablement OpenAI ou similaire) pour générer des insights.17
+Contenu Généré par l'Utilisateur : Les entrées de journal, les journaux alimentaires personnalisés et les modèles d'entraînement sont stockés sur le backend de Bevel pour permettre la synchronisation entre appareils, car Apple Health ne supporte pas nativement ces types de données personnalisés.13
+3. Algorithmes Biomètriques : Le "Cerveau" de l'Application
+3.1 La "Banque d'Énergie" (Energy Bank)
+L'Energy Bank est la métrique d'agrégation propriétaire de Bevel, conçue pour visualiser l'énergie humaine comme une capacité de batterie finie et rechargeable.1 Elle représente une évolution significative par rapport aux simples scores de "Readiness" (Récupération) en tenant compte des fluctuations intrajournalières.
+Définition de la Métrique : Un score cumulatif (0-100%) qui se vide avec le stress/l'effort et se recharge avec le repos/sommeil.18
+Entrées Algorithmiques :
+Récupération : Le point de départ (charge matinale).
+Sommeil : La qualité et la durée rechargent la banque.
+Strain (Effort) : L'exercice physique draine la banque.
+Stress : Le stress physiologique (chutes de VFC hors mouvement) draine la banque.18
+Dynamique Intrajournalière : Contrairement à la Récupération de Whoop (statique pour la journée), l'Energy Bank est dynamique. Une sieste de 20 minutes "recharge" la banque, tandis qu'une réunion stressante la "vide".18
+Mécanisme de Calcul :
+Décroissance Non-Linéaire : La banque se vide plus difficilement aux extrémités (haut et bas) mais réagit fortement aux changements moyens.
+Effet de Report (Carry-Over) : La valeur finale du Jour N influence la capacité de départ du Jour N+1, simulant la fatigue cumulative ou la "dette de sommeil".18
+3.2 Score de Récupération (Recovery)
+Le Score de Récupération détermine la capacité quotidienne à encaisser l'effort.
+Biomarqueurs Primaires :
+VFC (rMSSD) : Le déterminant principal de la dominance du système nerveux parasympathique. Bevel calcule cela en utilisant des mesures "Battement par Battement" de l'Apple Watch, généralement prises pendant le mode de concentration "Sommeil" pour garantir des données plus propres.1
+Fréquence Cardiaque au Repos (RHR) : Inversement corrélée à la récupération.
+Performance du Sommeil : Ratio entre le sommeil réel et le besoin de sommeil.
+Lignes de Base (Baselines) : Le système compare les métriques quotidiennes aux moyennes mobiles sur 7, 30 et 60 jours. Des déviations (par exemple, une VFC chutant en dessous de la plage des 30 jours) déclenchent des scores de récupération négatifs.10
+Filtrage du Bruit : Le système filtre les "artefacts" dans les données FC pour éviter les faux pics de récupération.8
+3.3 Moniteur de Stress (Temps Réel)
+Bevel crée un "Score de Stress" continu (0-100) comparable à la composante stress du "Body Battery" de Garmin.7
+Méthodologie :
+Entrée : Fréquence Cardiaque + VFC (SDNN/rMSSD).
+Isolation du Mouvement : L'algorithme soustrait le "stress physique" (mouvement/exercice via l'accéléromètre) pour isoler le "stress mental/physiologique". Si la FC est élevée sans mouvement détecté par l'accéléromètre, cela est catégorisé comme Stress.20
+Interprétation :
+0-25 : Repos/Récupération (Dominance Parasympathique).
+26-50 : Stress Faible.
+51-75 : Stress Moyen.
+76-100 : Stress Élevé (Combat ou Fuite / Sympathique).
+Action Utilisateur : Un stress élevé déclenche des recommandations pour des "Pratiques de relaxation" comme la respiration ou le yoga.20
+4. Strength Builder et Entraînement Basé sur la Vélocité (VBT)
+4.1 Le Différenciateur VBT
+La plupart des applications Apple Watch estiment l'effort (Strain) de musculation uniquement sur la base de la Fréquence Cardiaque, ce qui est notoirement imprécis pour l'effort anaérobie (où la FC est en retard sur l'effort). Bevel introduit une logique d'Entraînement Basé sur la Vélocité (VBT) utilisant l'accéléromètre de la montre.21
+Mécanisme : L'application suit la vitesse (vélocité en m/s) de la phase concentrique d'un mouvement.
+Physique : $Force = Masse \times Accélération$. En connaissant le poids (Saisie Utilisateur) et l'accélération (Capteur Montre), Bevel calcule la Puissance (Power Output) et la Charge Mécanique réelle sur le muscle.23
+Références Scientifiques : Cette méthode s'appuie sur la littérature sportive démontrant que la perte de vélocité est un indicateur plus fiable de la fatigue neuromusculaire que la simple défaillance musculaire.24
+Points de Données :
+Reps & Sets : Auto-détection des modèles de mouvement.
+Temps sous Tension (TUT) : Mesuré via la capacité start/stop de l'accéléromètre.26
+RPE (Rate of Perceived Exertion) : Utilisé comme calibration de repli si les données du capteur sont bruyantes ou pour les exercices sans mouvement du poignet (ex: Leg Press).21
+Impact sur le Strain : Une session de levage lourd d'une heure avec une FC basse générera un score de "Strain Musculaire" élevé dans Bevel, créant une métrique "Strain Total" plus précise.22
+4.2 Algorithmes de 1RM (One-Rep Max)
+Bevel calcule des estimations spécifiques de 1RM pour chaque exercice afin de suivre les progrès de "Force" dans le temps.
+Logique de Calcul : Mis à jour dans les versions récentes pour utiliser le "Max 1RM pour chaque exercice dans les 14 derniers jours".14 Cette fenêtre glissante assure que le 1RM est actuel et reflète la fatigue ou l'adaptation récente, plutôt qu'un record historique qui pourrait être non pertinent.
+Support Supersets & Circuits : Le module "Strength Builder" supporte des structures d'entraînement complexes comme les supersets, permettant aux utilisateurs de construire des routines où les exercices sont jumelés sans repos.26
+4.3 Expérience d'Entraînement (UI/UX)
+Live Activities : Supporte la "Live Sync" vers l'iPhone, permettant au téléphone d'agir comme un second écran pendant que la montre suit le mouvement.26
+Bouton Action : Sur l'Apple Watch Ultra, le Bouton Action est mappé à "Démarrer/Arrêter la Série", permettant un contrôle tactile sans regarder l'écran.15
+Minuteur de Repos : Démarre automatiquement à la fin d'une série.
+5. Nutrition 2.0 : L'Architecture AHEI
+5.1 Passage des Macros à la Qualité Alimentaire
+Début 2025, Bevel a lancé "Nutrition 2.0", changeant fondamentalement son suivi diététique d'un compteur de "Calories/Macros" vers un évaluateur de "Qualité".9
+Base Scientifique : L'Alternate Healthy Eating Index (AHEI).
+Bevel rejette l'approche "If It Fits Your Macros" (IIFYM). Un régime composé de barres protéinées et d'eau peut atteindre les objectifs macro mais obtient un score bas sur l'AHEI.19
+Facteurs Positifs (+) : Légumes, Fruits, Grains Entiers, Noix, Légumineuses, Oméga-3 (Poisson), Graisses saines.19
+Facteurs Négatifs (-) : Sucres Ajoutés, Sodium, Alcool, Viande Rouge, Viande Transformée (Nitrates), Aliments Ultra-transformés.19
+Algorithme de Score :
+Score Quotidien : 0-100.
+Démarre "Verrouillé" et se débloque après le premier repas.
+Score Dynamique : Manger 2,5 tasses de légumes ajoute jusqu'à +10 points. Manger de la viande transformée soustrait jusqu'à -10 points.15
+Suivi Micro-Nutritionnel : Suit le Potassium, Magnésium, Folate, Zinc (bien que les utilisateurs rapportent certains problèmes de sous-déclaration dans la base de données).27
+5.2 Score d'Impact Glycémique (Glucose Impact Score)
+Pour les utilisateurs avec des CGM (Libre/Dexcom/Lingo), Bevel calcule un Score d'Impact Glycémique.9
+Personnalisation : Le score n'est pas générique. Il apprend à partir de 20 repas enregistrés pour établir une ligne de base de la réaction glycémique spécifique de l'utilisateur à des aliments spécifiques.9
+Corrélation d'Événements : Il lie les pics de glucose à l'aliment spécifique enregistré, créant une boucle de rétroaction : "Ce porridge a provoqué un pic de glucose -> Score plus bas".
+5.3 Technologies de Saisie Alimentaire (Logging)
+Pour réduire la friction (le tueur n°1 des applications de nutrition), Bevel emploie multiples méthodes d'ingestion 9 :
+Reconnaissance Visuelle : "Camera Control" (intégration iPhone 16) pour prendre une photo ; l'IA identifie l'aliment et estime la portion.15
+Scan de Code-Barres : Accès à une base de données de "5 millions d'articles vérifiés".9
+Langage Naturel : "Décrire en langage naturel" (ex: "J'ai mangé un sandwich dinde avocat").
+Source de la Base de Données : Les preuves pointent vers une intégration de l'API FatSecret 28 combinée à une couche propriétaire. Les snippets lient explicitement FatSecret à la capacité de recherche d'aliments vérifiés.
+Import Apple Health : Bevel peut lire les calories/macros d'autres applications (ex: MyFitnessPal) via Apple Health, mais ne peut pas calculer un Score de Nutrition pour ces imports car Apple Health ne transmet pas le contexte des ingrédients (ex: "Viande transformée"), seulement les chiffres.9
+6. Systèmes de Sommeil et "Smart Alarm"
+6.1 Staging et Analyse du Sommeil
+Bevel utilise les données brutes des phases de sommeil fournies par l'Apple Watch (Core, Deep, REM, Awake) mais applique sa propre couche interprétative.1
+Score de Sommeil Profond : Personnalisé basé sur les normes d'âge et de genre.
+Score de Continuité : Mesure la fragmentation du sommeil (fréquence des réveils).
+Sommeil Réparateur : Agrégation de la durée Deep + REM.11
+6.2 La Banque de Sommeil (Sleep Bank)
+Similaire à l'Energy Bank, la Sleep Bank suit la dette de sommeil cumulative sur une période glissante (généralement 14 jours).30
+Fonction :
+Calcule le "Besoin de Sommeil" basé sur le Strain (L'activité diurne augmente le besoin).
+Compare "Besoin de Sommeil" vs "Sommeil Réel".
+Résultat : "Vous avez 5 heures de retard de sommeil."
+Insight Actionnable : Recommande une "Heure de Coucher" spécifique pour la nuit actuelle afin de commencer à rembourser la dette.30
+6.3 Alarme Intelligente (Smart Alarm)
+Mécanisme : Une alarme haptique sur l'Apple Watch.
+Déclencheur : Réveille l'utilisateur pendant une phase de Sommeil Léger à l'intérieur d'une fenêtre définie par l'utilisateur (ex: 06:30 - 07:00).
+Objectif : Prévenir l'"Inertie du Sommeil" causée par un réveil pendant le Sommeil Profond ou REM.1
+7. Bevel Intelligence : La Transformation IA
+7.1 La Persona "Analyste de Performance Humaine"
+Bevel Intelligence est le moteur de valeur de l'offre premium. Ce n'est pas juste un chatbot ; c'est un moteur d'analyse contextuelle.32
+Fenêtre de Contexte : Il a accès aux lignes de base de 7/30/90 jours.33
+Mémoire : Il conserve les "Préférences de Réponse" et les faits spécifiques à l'utilisateur (ex: "J'ai une blessure au genou", "Je m'entraîne pour un marathon").15
+Ingénierie de Prompt (Reverse-Engineering) : Le système utilise des prompts système sophistiqués (probablement cachés) qui instruisent l'IA de :
+"Distinguer le Signal du Bruit".
+"Connecter les Points Invisibles" (ex: corrélations entre caféine tardive et VFC).33
+"Être Explicite sur l'Incertitude".32
+Adopter le rôle de "Human Performance Data Analyst & Longevity Strategist".32
+7.2 Le Moteur de Corrélation
+C'est la fonctionnalité la plus puissante à répliquer pour un développeur. Bevel Intelligence scanne les tags du Journal et les résultats biométriques pour trouver des liens de causalité.
+Entrée : L'utilisateur tague "Alcool" + "Repas Tardif" le vendredi.
+Donnée : Samedi matin VFC est -15% sous la base. Sommeil Profond est -20%.
+Sortie : "L'alcool combiné aux repas tardifs réduit votre récupération de 18% en moyenne. Essayez de les séparer.".1
+Journalisation Automatisée : Bevel 2.0 tague automatiquement les entrées de journal basées sur les journaux alimentaires. Si un utilisateur enregistre un cookie, le Journal auto-tague "Sucres Ajoutés" sans saisie manuelle.9
+8. Expérience Utilisateur et Design "Liquid Glass"
+8.1 L'Esthétique "Liquid Glass"
+Bevel se différencie des interfaces plates de Garmin ou sombres de Whoop avec un langage de design moderne "Liquid Glass".15
+Caractéristiques Visuelles :
+Translucidité : Les éléments d'interface (cartes, barres de navigation) fonctionnent comme des couches de verre dépoli sur des arrière-plans dynamiques.
+Réfraction : Les blobs/dégradés d'arrière-plan changent et se "réfractent" à travers les éléments de premier plan, créant une sensation de profondeur et de "vivant".
+Fluidité : Les animations sont basées sur la physique (ressorts/amortissements) plutôt que linéaires.15
+Interface Fonctionnelle :
+En-têtes : "En-têtes Liquid Glass" qui se fondent dans la barre d'état.
+Densité de Données : Élevée. L'UI évite l'espace blanc au profit d'une visualisation de données riche (sparklines, barres de tendance) superposée sur ces textures de verre.
+8.2 Stratégie de Widgets
+Bevel investit massivement dans les widgets de l'écran d'accueil et de l'écran de verrouillage iOS pour garder les données visibles.18
+Types :
+Energy Bank : Jauge circulaire montrant le niveau de batterie actuel.
+Strain/Recovery/Sleep : Barres divisées montrant les trois piliers principaux.
+Lock Screen : Complications circulaires minimalistes pour des vérifications d'état immédiates.
+9. Analyse du Modèle Économique et Monétisation
+9.1 Le Pivot "Freemium"
+Dans un mouvement de marché audacieux (vers fin 2025), Bevel est passé d'un mur payant strict à un niveau gratuit généreux.2
+Le Niveau Gratuit Inclut :
+Toutes les données historiques (auparavant bloquées).
+Scores de Strain, Sommeil et Récupération.
+Journalisation Nutritionnelle (Bevel 2.0).
+Strength Builder (VBT).2
+Pourquoi? : Pour couper l'herbe sous le pied des concurrents (Whoop, Athlytic) et acquérir une base d'utilisateurs massive (Effets de Réseau de Données). Puisque le coût marginal du calcul de la VFC localement est nul, ils le donnent gratuitement.
+9.2 L'Abonnement "Bevel Pro" / Intelligence
+Le Mur Payant : Bevel Intelligence (IA).
+Coût : ~$50/an (tarification héritée maintenue).35
+Proposition de Valeur : "Les données brutes sont gratuites ; les Insights sont payants." L'utilisateur paie pour l'interprétation des données, pas pour les données elles-mêmes.2
+Monétisation Future : Les snippets suggèrent une "hausse de prix" et de nouvelles fonctionnalités payantes en 2026, probablement liées à un coaching avancé ou des tableaux de bord entreprise/coaching.2
+10. Catalogue Détaillé des Fonctionnalités et Dictionnaire de Données
+Cette section fournit une liste granulaire de chaque métrique et fonctionnalité identifiée, organisée par module, pour servir de référence au développement.
+Tableau Récapitulatif : Module Sommeil & Récupération
+Fonctionnalité
+Description Technique
+Source de Données
+Score de Récupération
+Note de préparation 0-100%. Basée sur VFC (rMSSD) et RHR matinal.
+Apple Health (FC/VFC)
+Sleep Bank
+Calculateur de dette de sommeil (Fenêtre glissante de 14 jours).
+Apple Health (Durée Sommeil)
+Smart Alarm
+Réveil haptique en phase de Sommeil Léger (Fenêtre définie par l'utilisateur).
+Accéléromètre Montre / FC
+Score Sommeil Profond
+Note de qualité vs Normes Âge/Genre.
+Apple Health (Phases)
+Score de Continuité
+Mesure de fragmentation (fréquence des éveils).
+Apple Health (Segments Éveil)
+Fréq. Respiratoire
+Respirations par minute pendant le sommeil (Indicateur récupération).
+Apple Health
+SpO2
+Taux d'oxygène sanguin (Indicateur Apnée).
+Apple Health
+
+Tableau Récapitulatif : Module Fitness & Strain
+Fonctionnalité
+Description Technique
+Source de Données
+Cardio Load
+Charge aérobie basée sur les Zones FC (Max, Réserve, ou Seuil).
+Apple Health (Entraînements)
+Muscular Strain
+Charge anaérobie basée sur VBT (Vélocité/Puissance).
+Capteurs Mouvement Montre
+Estimations 1RM
+Max estimé sur une répétition (Max des 14 derniers jours).
+Algorithme Personnalisé
+Energy Bank
+Niveau d'énergie intrajournalier (Batterie) combinant tout stress/repos.
+Métrique Composite
+Zone Training
+Zones FC Personnalisées (Focus Zone 2).
+Paramètres Utilisateur
+Garmin Sync
+Importation entraînements/strain depuis Garmin Connect.
+API Garmin
+
+Tableau Récapitulatif : Module Nutrition 2.0
+Fonctionnalité
+Description Technique
+Source de Données
+Score Nutrition
+Score Qualité 0-100 basé sur AHEI.
+Journal Alimentaire
+Glucose Impact
+Score mesurant la réponse glycémique aux repas spécifiques.
+CGM (Dexcom/Libre)
+Food Logger
+Caméra IA, Code-barres, Voix, Recherche, Favoris, Recettes.
+FatSecret/Nutritionix DB
+Macro Tracking
+Suivi Glucides, Lipides, Protéines, Fibres, Sucre, Sodium.
+Base de Données Aliments
+Hydratation
+Journalisation de l'apport en eau.
+Journal
+
+Tableau Récapitulatif : Module Santé Mentale & Journal
+Fonctionnalité
+Description Technique
+Source de Données
+Stress Monitor
+Stress temps réel (dérivé VFC) ajusté pour le mouvement.
+FC + Accéléromètre
+Journal
+Traceur d'habitudes (Alcool, Magnésium, Sauna, Sexe, etc.).
+Saisie Utilisateur / Auto-Tag
+Corrélations
+"X affecte Y de Z%" (ex: Alcool baisse Récupération de 12%).
+Moteur Bevel Intelligence
+Suivi Humeur
+Journalisation subjective (Valence/Arousal).
+Journal
+
+11. Recommandations Techniques pour le Développement
+Si vous construisez un concurrent de Bevel, considérez les exigences critiques suivantes :
+Interopérabilité HealthKit : Vous devez maîtriser HKHealthStore. L'accès en lecture ne suffit pas ; vous devez écrire dans Santé pour être un bon citoyen de l'écosystème.
+Architecture Local-First : Ne stockez pas les données biométriques brutes sur votre cloud. Cela augmente la responsabilité et les coûts. Traitez localement sur l'appareil (Edge Computing).
+Accès Accéléromètre : Pour le Strength Builder, vous ne pouvez pas compter sur la FC. Vous devez accéder au CMMotionManager de la montre pour détecter les répétitions et la vélocité.
+Contexte IA (RAG) : N'utilisez pas simplement une enveloppe autour de ChatGPT. Vous avez besoin d'un pipeline "RAG" (Retrieval-Augmented Generation) qui injecte les 30 derniers jours de données de l'utilisateur dans le prompt pour obtenir des réponses personnalisées.
+Score AHEI : Le score AHEI est un différenciateur fort. La plupart des applications ne font que compter les calories. Noter la qualité est le nouveau standard.
+Design Fluide : Le standard pour les applications de santé 2026 est le design haute fidélité et translucide. Investissez dans les shaders SwiftUI et les matériaux personnalisés.
+Ce rapport confirme que Bevel a réussi sa transition de "Tracker de Données" à "Compagnon de Santé" en tirant parti de l'IA et de choix algorithmiques distincts (VBT, Energy Bank, AHEI). Le répliquer nécessite une expertise en traitement du signal (Montre), en science nutritionnelle (AHEI), et en intégration de grands modèles de langage (Intelligence).
+Sources des citations
+Bevel - The Everything Health App, consulté le janvier 19, 2026, https://www.bevel.health/
+Bevel app now free as AI tier becomes optional - Gadgets & Wearables, consulté le janvier 19, 2026, https://gadgetsandwearables.com/2025/12/21/bevel-app-free/
+Bevel, the App That Turns Your Apple Watch Into a 'Whoop,' Is Now Free | Lifehacker, consulté le janvier 19, 2026, https://lifehacker.com/health/bevel-the-app-that-turns-your-apple-watch-into-a-whoop-is-now-free
+2 Months with Bevel review : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1md2v9d/2_months_with_bevel_review/
+Is Bevel the best “affordable” fitness and health app for Apple users? : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1it6c0n/is_bevel_the_best_affordable_fitness_and_health/
+Tech News - OnLinkSoft, consulté le janvier 19, 2026, https://onlinksoft.com/en/tech-news?page=15353
+Garmin to Ultra 2 : r/applewatchultra - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/applewatchultra/comments/1jnwrfk/garmin_to_ultra_2/
+Just left Whoop for Apple Watch + Bevel : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1kiilo3/just_left_whoop_for_apple_watch_bevel/
+Feb 5, 2025 | Bevel 2.0 - Introducing the Nutrition Score, consulté le janvier 19, 2026, https://docs.bevel.health/release-notes/b/F13E15B4-F979-4057-BC2B-CE7B5E5EFAE2/Feb-5-2025-Bevel-2.0---Introducin
+Bevel 2.0 - Introducing the Nutrition Score : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1iieu5i/bevel_20_introducing_the_nutrition_score/
+Bevel: All-In-One Health App - App Store - Apple, consulté le janvier 19, 2026, https://apps.apple.com/at/app/bevel-all-in-one-health-app/id6456176249?l=en-GB
+Nutrition syncing from another app - can I still get a nutrition score? : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1jfr5y8/nutrition_syncing_from_another_app_can_i_still/
+Question about privacy : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1ng0jr8/question_about_privacy/
+Bevel: All-In-One Health App - App Store - Apple, consulté le janvier 19, 2026, https://apps.apple.com/us/app/bevel-all-in-one-health-app/id6456176249
+Bevel Release Notes, consulté le janvier 19, 2026, https://docs.bevel.health/release-notes
+About Bevel, consulté le janvier 19, 2026, https://www.bevel.health/about-us
+Bevel AI — do they store our health data on their servers? : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1p3set3/bevel_ai_do_they_store_our_health_data_on_their/
+May 10, 2024 | Energy Bank - Bevel, consulté le janvier 19, 2026, https://docs.bevel.health/release-notes/b/EA88CB28-44E8-4447-B185-2A23F835576F/May-10-2024-Energy-Bank
+New Nutrition Score: Addressing the Discussion : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1pk0etl/new_nutrition_score_addressing_the_discussion/
+The Basics: Stress Monitor - Bevel, consulté le janvier 19, 2026, https://www.bevel.health/blog/stress-monitor
+Mar 11, 2024 | Strength Builder - Bevel, consulté le janvier 19, 2026, https://docs.bevel.health/release-notes/b/B82967CA-11CA-486D-A5A7-2B1B48A1EE4C/Mar-11-2024-Strength-Builder
+Mar 13 | Strength Builder is here! : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1bdtv5n/mar_13_strength_builder_is_here/
+How is strain calculated with the strength builder? : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1eaoftz/how_is_strain_calculated_with_the_strength_builder/
+The measurement of instantaneous angular speed | Request PDF - ResearchGate, consulté le janvier 19, 2026, https://www.researchgate.net/publication/223419694_The_measurement_of_instantaneous_angular_speed
+signal strength based: Topics by Science.gov, consulté le janvier 19, 2026, https://www.science.gov/topicpages/s/signal+strength+based
+Sept 10, 2025 | Bevel 2025 Summer Release : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1ndig8n/sept_10_2025_bevel_2025_summer_release/
+Bug Reports - Bevel Feedback, consulté le janvier 19, 2026, https://feedback.bevel.health/bug-reports
+Calorie Counter by fatsecret - Apps on Google Play, consulté le janvier 19, 2026, https://play.google.com/store/apps/details?id=com.fatsecret.android&hl=en_US
+The Largest Global Nutrition Database, Recipe and Food API - fatsecret Platform, consulté le janvier 19, 2026, https://platform.fatsecret.com/platform-api
+Bevel: All-In-One Health App - App Store, consulté le janvier 19, 2026, https://apps.apple.com/ru/app/bevel-all-in-one-health-app/id6456176249?l=en-GB
+Bevel: All-In-One Health App - App Store - Apple, consulté le janvier 19, 2026, https://apps.apple.com/id/app/bevel-all-in-one-health-app/id6456176249?l=id&platform=watch
+Bevel - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/
+Getting actionable advice & insight out of Bevel Intelligence : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1q5w618/getting_actionable_advice_insight_out_of_bevel/
+Anyone else's widgets stopped updating? : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1qfr0d0/anyone_elses_widgets_stopped_updating/
+Bevel App Subscription Price Jump After Free Trial? : r/bevelhealth - Reddit, consulté le janvier 19, 2026, https://www.reddit.com/r/bevelhealth/comments/1j7ss4v/bevel_app_subscription_price_jump_after_free_trial/
+
+
+
+
+
+
+Application Bevel – Présentation et fonctionnalités
+Bevel est présentée comme « The Everything Health App », un compagnon de santé basé sur l’IA qui transforme les données personnelles (sommeil, activité, nutrition, etc.) en conseils personnalisés[1]. L’application, développée par la start‑up américaine Finerpoint Inc (New York), cible avant tout les utilisateurs finaux soucieux de leur santé globale. Son objectif est de regrouper en un seul endroit les données issues de l’Apple Watch et d’autres trackers pour fournir des recommandations quotidiennes (par exemple « aujourd’hui, entraînement léger » ou « évitez le sel le soir »)[1][2].
+Fonctions principales pour les utilisateurs
+Bevel offre une palette très large de fonctionnalités pour les patients/particuliers, parmi lesquelles :
+•	Bevel Intelligence & Scores de santé : un moteur intelligent relie toutes vos données et suggère quand s’entraîner ou récupérer[3]. L’app calcule plusieurs scores quotidiens (reprise, sommeil, effort/« strain », nutrition, stress) pour synthétiser l’état de l’utilisateur. Par exemple, le Score de récupération indique votre niveau de forme du jour pour éviter le surentraînement[3], le Score de sommeil analyse phases et interruptions et comprend une alarme intelligente[4], le Score d’effort mesure l’intensité journalière en prenant en compte repos et récupération[5], etc. Ces indicateurs s’appuient sur les données collectées (rythme cardiaque, variabilité, etc.) pour guider vos décisions.
+•	Suivi de la nutrition : Bevel intègre un journal alimentaire sophistiqué. Il permet de logger un repas par lecture de code-barres, recherche d’image ou saisie manuelle, en s’appuyant sur une base de 6 millions d’aliments[6]. On peut fixer des objectifs caloriques et macronutriments, et même suivre la glycémie en temps réel (via capteur Dexcom/Libre) pour voir l’impact des repas sur son métabolisme[6].
+•	Entraînement musculaire et cardio : l’app propose un coach de renforcement avec plus de 700 exercices pré-enregistrés (banc de données d’exercices). On peut synchroniser les entraînements entre montre et téléphone, générer des plans personnalisés ou enregistrer des séances passées[7]. Les données d’entraînement (durée, calories, zone cardiaque) sont utilisées pour calculer un score d’effort personnalisé. Par ailleurs, le suivi de la composition corporelle (masse musculaire vs gras) et du VO₂max est prévu pour visualiser les progrès (prise de masse ou perte de poids) dans le temps[8].
+•	Biologie et habitudes de vie : Bevel permet de suivre des marqueurs clés comme la variabilité de la fréquence cardiaque (HRV), le VO₂max, etc., et d’en déduire des tendances personnelles[9]. Une section Journal invite l’utilisateur à tracer ses habitudes quotidiennes (hydratation, exposition au soleil, écran, etc.)[10]. L’application étudie alors comment ces comportements influencent le sommeil ou la récupération. Par exemple, une note de l’app dans l’App Store cite la synthèse de l’IA qui relie alimentation tardive et sommeil perturbé[11].
+•	Modes veille intelligente et gestion du stress : Bevel surveille vos signes vitaux en continu. Par exemple, un Mode alarme intelligente peut vous réveiller en phase de sommeil léger pour un réveil naturel[12]. L’application calcule aussi un score de stress en temps réel pour identifier les pics de tension (pendant le sommeil, les entraînements, la vie quotidienne)[13]. Elle signale des déclencheurs potentiels (comme de la caféine tardive) et suggère des ajustements (« moins de café l’après-midi si la HRV diminue »)[14].
+•	Intégration de l’écosystème wearable : Bevel s’appuie sur Apple Health et l’Apple Watch pour collecter la plupart des données (sommeil, cardio, pas, etc.). Elle s’intègre également à des capteurs externes : par exemple aux glucomètres en continu (Dexcom, Libre)[15]. Des mises à jour récentes ajoutent le support de Garmin Connect (workouts, sommeil, biométrie)[16]. L’idée est de pouvoir agréger automatiquement toutes les données de santé via les wearables existants[15][17].
+En résumé, Bevel propose un suivi holistique et proactif de la santé individuelle : ses scores et recommandations couvrent sommeil, entraînement, nutrition, stress et habitudes de vie, le tout lié par une couche IA « Bevel Intelligence »[3][18]. L’interface affiche graphiques et conseils quotidiens simples à exploiter.
+Fonctions pour professionnels de santé ou partenaires
+À ce jour, Bevel ne propose pas de version dédiée aux professionnels de santé (médecins, nutritionnistes, etc.) ni d’interface « pro » spécifique dans les sources publiques. La philosophie de l’entreprise est centrée sur l’utilisateur final : il est encouragé à devenir le « PDG de sa propre santé, avec les médecins comme conseillers, pas gestionnaires »[19]. En pratique, l’application est destinée aux particuliers pour le suivi personnel.
+En revanche, plusieurs partenariats technologiques sont annoncés pour enrichir le service. Le blog officiel mentionne des intégrations directes avec des plateformes tierces (par ex. Garmin) afin que Bevel s’adapte aux outils existants de l’utilisateur[15]. Les fondateurs indiquent vouloir étendre ces partenariats pour rendre la santé proactive plus accessible[20]. Concrètement, on note déjà : - Intégration Apple Health / Apple Watch (collecte native de données cardio/sommeil)[2][15].
+- Synchronisation avec capteurs de glycémie (Dexcom, Libre) pour le suivi du glucose[15].
+- Garmin Connect (activités, sommeil, biométrie) – support en développement[15][21].
+- Conseils issus du feedback utilisateur et du partenariat avec des experts (équipes sportives, recherche), bien que non listés en source officielle.
+Modèle économique
+Bevel adopte un modèle freemium : l’application de base est gratuite au téléchargement, mais des fonctionnalités avancées requièrent un abonnement (« Bevel Pro »). Sur l’App Store Apple on indique que l’abonnement est mensuel ou annuel (utilisateur paie environ 6 USD par mois ou 50 USD par an selon la presse spécialisée)[22]. Les conditions d’Apple précisent que l’abonnement se renouvelle automatiquement, avec résiliation possible à tout moment[23]. Un événement marketing récent a même rendu plusieurs fonctions (nutrition, entraînement de force) gratuites pour tous afin de démarrer l’année, mais l’IA avancée et les conseils personnalisés restent derrière le paiement.
+En somme, Bevel génère ses revenus par abonnements récurrents (à haute marge, comme souvent pour ce type d’app), et valorise ainsi sa croissance rapide (100k utilisateurs actifs quotidiens) et l’engagement élevé de ses membres[2][22]. Les fondateurs mentionnent ne pas vouloir créer leur propre matériel (capteurs), d’où ce choix logic-based pour une large accessibilité[24][22].
+Technologies et architecture
+Techniquement, Bevel est une application native iOS (iPhone/iPad/Apple Watch) exploitant HealthKit et les API de l’Apple Watch pour extraire un maximum de métriques (battements, HRV, sommeil, activité, etc.)[2][15]. Le cœur de l’application est un moteur d’intelligence artificielle et d’apprentissage automatique (nommé « Bevel Intelligence ») qui analyse en temps réel les corrélations entre nutrition, sommeil, entraînement et stress pour générer les recommandations[25][26].
+La société met en avant un design soigné et une UX simplifiée (pas seulement des tableaux de chiffres), ainsi qu’une interopérabilité poussée : l’utilisateur peut connecter divers wearables et capteurs sans être enfermé dans un écosystème propriétaire[27][15]. Le développement est assuré par une petite équipe selon les fondateurs, et les mises à jour récentes (intégration Garmin, widgets Mac) montrent une évolution rapide de la roadmap produit.
+Confidentialité et aspects légaux
+Bevel insiste lourdement sur le respect de la vie privée. La direction affirme que les données sensibles « n’appartiennent qu’à vous » et sont stockées localement sans partage avec des tiers sans consentement explicite[28][29]. Selon la politique officielle, rien n’est vendu ou partagé sans permission[29]. L’approche est qualifiée de « privacy-first » dans la communication de l’entreprise[30][28].
+D’un point de vue légal, Bevel n’est pas présenté comme un dispositif médical et n’a pas vocation à diagnostiquer ou traiter des maladies[31]. L’App Store et le site précisent explicitement qu’il ne faut pas se passer d’avis médical. Concernant les normes de protection des données, on ne trouve pas de mention explicite de certifications HIPAA (aux US) ou de conformité, mais un analyste souligne que le respect du RGPD en Europe sera un enjeu crucial, vu la sensibilité des données collectées[32]. À ce stade, la confidentialité repose surtout sur la confiance déclarée et l’architecture sur appareil ; les obligations réglementaires restent implicites, comme chez d’autres apps de bien-être.
+Concurrence et applications similaires
+Le marché regroupe plusieurs apps voisines, souvent avec des approches similaires ou complémentaires :
+•	Whoop, Oura, Eight Sleep (respectivement bracelet, bague et matelas connectés) sont des systèmes complets qui mesurent sommeil, activité et récupérations via leur propre hardware et un abonnement premium[33]. Ces offres se différencient de Bevel (qui est software-only) par la nécessité d’acheter un appareil dédié.
+•	Athlytic (iOS/Apple Watch) et Welltory (iOS/Android) sont des applications axées sur l’analyse de la variabilité cardiaque et de la recovery à partir des données Apple Watch ou du smartphone. Elles proposent des scores de readiness et stress comparables, mais avec des fonctionnalités souvent plus limitées (pas de suivi nutrition par exemple).
+•	Strava, Garmin Connect, Fitbit et MyFitnessPal offrent chacun une partie du service (strava pour le social sportif et les itinéraires, Garmin/Apple/Google Health pour le suivi d’activités et sommeil, MyFitnessPal pour la nutrition). Bevel se positionne plutôt comme un hub intégrateur entre tous ces segments.
+•	On trouve aussi des solutions émergentes basées sur l’IA (par ex. Remy AI, Levels, etc.) qui ciblent des aspects particuliers (sommeil, nutrition, glycémie).
+En résumé, Bevel se distingue par la combinaison de toutes ces données dans une seule app et son algorithme centralisé. Sa principale concurrence vient des applications ou services qui proposent des « scores de santé » et des plans d’action semblables (récupération, sommeil, alimentation), qu’il s’agisse d’offres software comme Athlytic et Welltory ou d’écosystèmes fermés comme Whoop et Oura[33]. L’engagement élevé des utilisateurs (8 ouvertures par jour, 80 % de rétention à 3 mois) indique que Bevel parvient à rivaliser sur l’utilité au quotidien, du moins auprès de ses adopteurs[2][22].
+Sources : Présentation officielle et App Store Bevel[1][3] ; analyses média et presses (TechCrunch, Fitt, LinkedIn)[2][22] ; blog et FAQ de Bevel[15][29].
+________________________________________
+[1] [8] [11] [14] Bevel - The Everything Health App
+https://www.bevel.health/
+[2] [20] [21] [24] Bevel raises $10M Series A from General Catalyst for its AI health companion | TechCrunch
+https://techcrunch.com/2025/10/30/bevel-raises-10m-series-a-from-general-catalyst-for-its-ai-health-companion/
+[3] [4] [5] [6] [7] [13] [18] [23] [31] ‎App Bevel: Compagnon de santé IA - App Store
+https://apps.apple.com/fr/app/bevel-compagnon-de-sant%C3%A9-ia/id6456176249
+[9] [10] [12] [25] ‎Bevel: All-In-One Health App App - App Store
+https://apps.apple.com/us/app/bevel-all-in-one-health-app/id6456176249
+[15] [28] We Raised $10M to Accelerate the Future of Personalized Health
+https://www.bevel.health/blog/series-a
+[16] ‎Garmin Integration Is Here!
+https://apps.apple.com/ao/app/bevel-all-in-one-health-app/id6456176249?eventid=6755450611
+[17] [22] [26] [32] [33] Bevel and the Quest for Unified Health: Solving the Data Fragmentation Problem in Wellness Tech
+https://www.linkedin.com/pulse/bevel-quest-unified-health-solving-data-fragmentation-ma%C3%A2mar-gomeri-xyi5e
+[19] [27] [29] About Bevel
+https://www.bevel.health/about-us
+[30] Bevel Launches a Health Companion to Improve Longevity and Performance | Fitt Insider
+https://insider.fitt.co/press-release/bevel-launches-a-health-companion-to-improve-longevity-and-performance/
+
+
+

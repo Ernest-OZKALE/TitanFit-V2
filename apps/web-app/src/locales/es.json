@@ -1,0 +1,24 @@
+{
+    "admin": {
+        "dashboard": "Tablero",
+        "users": "Usuarios",
+        "settings": "Configuración",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "delete": "Eliminar",
+        "edit": "Editar",
+        "create": "Crear",
+        "search": "Buscar",
+        "loading": "Cargando...",
+        "actions": "Acciones",
+        "status": "Estado",
+        "date": "Fecha"
+    },
+    "nav": {
+        "products": "Productos",
+        "orders": "Pedidos",
+        "analytics": "Analítica",
+        "marketing": "Marketing",
+        "support": "Soporte"
+    }
+}

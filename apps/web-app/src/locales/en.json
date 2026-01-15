@@ -1,0 +1,24 @@
+{
+    "admin": {
+        "dashboard": "Dashboard",
+        "users": "Users",
+        "settings": "Settings",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "edit": "Edit",
+        "create": "Create",
+        "search": "Search",
+        "loading": "Loading...",
+        "actions": "Actions",
+        "status": "Status",
+        "date": "Date"
+    },
+    "nav": {
+        "products": "Products",
+        "orders": "Orders",
+        "analytics": "Analytics",
+        "marketing": "Marketing",
+        "support": "Support"
+    }
+}

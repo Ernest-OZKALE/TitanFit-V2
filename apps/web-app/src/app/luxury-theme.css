@@ -1,0 +1,216 @@
+/* Luxury Theme - TitanFit Premium (Light Genesis) */
+
+:root {
+    /* Colors - Luxury Palette (Light Mode Focused) */
+    --gold-primary: #D4AF37;
+    --gold-dark: #B8860B;
+    --gold-light: #F5C518;
+
+    /* Pure White Mode Remap */
+    --black-pure: #FFFFFF;
+    /* Inverted logic: "Black" surfaces become White */
+    --slate-dark: #FFFFFF;
+
+    /* Text Colors - High Contrast */
+    --slate-900: #0f172a;
+    /* Deep Slate for primary text */
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+
+    /* Backgrounds */
+    --white-pure: #FFFFFF;
+    --gray-light: #F8FAFC;
+    /* Very subtle off-white for sections */
+    --gray-50: #F1F5F9;
+
+    /* Typography */
+    --font-heading: var(--font-playfair);
+    --font-body: var(--font-inter);
+    /* ... (spacing and radius remain the same) ... */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+    --space-2xl: 8rem;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+
+    /* Transitions (slow, elegant) */
+    --transition-fast: 300ms ease-out;
+    --transition-normal: 400ms ease-out;
+    --transition-slow: 500ms ease-out;
+}
+
+/* Typography */
+.heading-luxury {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--slate-900);
+    /* Inverted */
+}
+
+.heading-hero {
+    font-size: clamp(3rem, 10vw, 7.5rem);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.heading-section {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.body-luxury {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--slate-900);
+    /* Inverted */
+}
+
+.body-large {
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+}
+
+.text-small {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.text-legal {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+    background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold-primary) 50%, var(--gold-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Background Patterns */
+.bg-black-grain {
+    background-color: var(--black-pure);
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Luxury Button Styles */
+.btn-luxury-primary {
+    position: relative;
+    padding: 1rem 2.5rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--black-pure);
+    background: var(--gold-primary);
+    border: 1px solid var(--gold-primary);
+    border-radius: 2px;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.btn-luxury-primary:hover {
+    background: var(--gold-dark);
+    border-color: var(--gold-dark);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+}
+
+.btn-luxury-outline {
+    position: relative;
+    padding: 1rem 2.5rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold-primary);
+    background: transparent;
+    border: 1px solid var(--gold-primary);
+    border-radius: 2px;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.btn-luxury-outline:hover {
+    color: var(--black-pure);
+    background: var(--gold-primary);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Feature Card */
+.feature-card-luxury {
+    position: relative;
+    padding: 3rem 2rem;
+    background: var(--slate-dark);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-normal);
+}
+
+.feature-card-luxury:hover {
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+}
+
+.feature-card-luxury::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gold-primary);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.feature-card-luxury:hover::before {
+    opacity: 1;
+}
+
+/* Scroll Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+    :root {
+        --space-lg: 3rem;
+        --space-xl: 4rem;
+        --space-2xl: 5rem;
+    }
+
+    .btn-luxury-primary,
+    .btn-luxury-outline {
+        width: 100%;
+        padding: 1.25rem 2rem;
+    }
+}

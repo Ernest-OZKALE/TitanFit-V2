@@ -1,0 +1,62 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - alert [ref=e13]
+  - generic [ref=e14]:
+    - generic [ref=e24]:
+      - text: // @ts-ignore
+      - generic [ref=e25]:
+        - link "TitanFit" [ref=e26]:
+          - /url: /
+          - heading "TitanFit" [level=1] [ref=e27]
+        - paragraph [ref=e28]:
+          - text: Votre Voyage Fitness
+          - text: Commence Ici.
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: 📊
+            - generic [ref=e32]:
+              - heading "Suivi Intelligent" [level=3] [ref=e33]
+              - paragraph [ref=e34]: Enregistrez vos repas et suivez vos macros
+          - generic [ref=e35]:
+            - generic [ref=e36]: 🤖
+            - generic [ref=e37]:
+              - heading "Coach IA" [level=3] [ref=e38]
+              - paragraph [ref=e39]: Conseils nutritionnels sur mesure
+          - generic [ref=e40]:
+            - generic [ref=e41]: 🏆
+            - generic [ref=e42]:
+              - heading "Mode Élite" [level=3] [ref=e43]
+              - paragraph [ref=e44]: Atteignez le sommet de votre potentiel
+    - generic [ref=e45]:
+      - link "Retour à l'accueil" [ref=e46]:
+        - /url: /
+        - button "Retour à l'accueil" [ref=e47] [cursor=pointer]:
+          - img
+          - text: Retour à l'accueil
+      - text: // @ts-ignore
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - heading "Bon retour" [level=2] [ref=e50]
+          - paragraph [ref=e51]: L'arène vous attend.
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: Email
+            - textbox "Email" [ref=e55]:
+              - /placeholder: titan@exemple.com
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: Mot de passe
+              - link "Oublié ?" [ref=e59]:
+                - /url: /forgot-password
+            - textbox "Mot de passe" [ref=e60]:
+              - /placeholder: ••••••••
+          - button "Se connecter" [ref=e61] [cursor=pointer]
+        - paragraph [ref=e63]:
+          - text: Pas encore de compte ?
+          - link "Rejoindre l'élite" [ref=e64]:
+            - /url: /signup
+```

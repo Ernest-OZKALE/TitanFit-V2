@@ -1,0 +1,84 @@
+{
+    "name": "TitanFit - Votre Parcours Fitness Elite",
+    "short_name": "TitanFit",
+    "description": "Application fitness premium avec coaching IA, suivi nutritionnel intelligent, et gamification.",
+    "start_url": "/dashboard",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#D4AF37",
+    "orientation": "portrait",
+    "categories": [
+        "fitness",
+        "health",
+        "lifestyle"
+    ],
+    "lang": "fr",
+    "dir": "ltr",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/dashboard-mock.png",
+            "sizes": "1200x630",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Dashboard TitanFit"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Tableau de bord",
+            "short_name": "Dashboard",
+            "description": "Accéder au tableau de bord",
+            "url": "/dashboard",
+            "icons": [
+                {
+                    "src": "/favicon.ico",
+                    "sizes": "64x64"
+                }
+            ]
+        },
+        {
+            "name": "Ajouter un repas",
+            "short_name": "Repas",
+            "description": "Logger un nouveau repas",
+            "url": "/log-meal",
+            "icons": [
+                {
+                    "src": "/favicon.ico",
+                    "sizes": "64x64"
+                }
+            ]
+        },
+        {
+            "name": "Nouvel entraînement",
+            "short_name": "Workout",
+            "description": "Commencer un entraînement",
+            "url": "/log-workout",
+            "icons": [
+                {
+                    "src": "/favicon.ico",
+                    "sizes": "64x64"
+                }
+            ]
+        }
+    ]
+}

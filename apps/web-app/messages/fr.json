@@ -1,0 +1,93 @@
+{
+    "common": {
+        "appName": "TitanFit",
+        "loading": "Chargement...",
+        "save": "Sauvegarder",
+        "cancel": "Annuler",
+        "back": "Retour",
+        "next": "Suivant",
+        "submit": "Soumettre",
+        "delete": "Supprimer",
+        "edit": "Modifier",
+        "close": "Fermer",
+        "search": "Rechercher",
+        "filter": "Filtrer",
+        "all": "Tout",
+        "none": "Aucun",
+        "yes": "Oui",
+        "no": "Non",
+        "error": "Erreur",
+        "success": "Succès"
+    },
+    "nav": {
+        "dashboard": "Tableau de Bord",
+        "nutrition": "Nutrition",
+        "training": "Entraînement",
+        "progress": "Progrès",
+        "social": "Social",
+        "settings": "Paramètres",
+        "profile": "Profil",
+        "logout": "Déconnexion"
+    },
+    "auth": {
+        "login": "Se connecter",
+        "signup": "S'inscrire",
+        "email": "Email",
+        "password": "Mot de passe",
+        "forgotPassword": "Mot de passe oublié ?",
+        "welcomeBack": "Bon retour",
+        "createAccount": "Créer un compte",
+        "alreadyHaveAccount": "Vous avez déjà un compte ?",
+        "noAccount": "Pas encore de compte ?",
+        "joinElite": "Rejoindre l'élite"
+    },
+    "dashboard": {
+        "title": "Tableau de Bord",
+        "welcome": "Bienvenue",
+        "todaySummary": "Résumé du jour",
+        "calories": "Calories",
+        "protein": "Protéines",
+        "water": "Eau",
+        "workouts": "Entraînements",
+        "streak": "Série",
+        "days": "jours"
+    },
+    "nutrition": {
+        "title": "Nutrition",
+        "mealLog": "Journal des Repas",
+        "addMeal": "Ajouter un Repas",
+        "breakfast": "Petit-déjeuner",
+        "lunch": "Déjeuner",
+        "dinner": "Dîner",
+        "snack": "Collation",
+        "macros": "Macros",
+        "carbs": "Glucides",
+        "fat": "Lipides",
+        "fiber": "Fibres"
+    },
+    "training": {
+        "title": "Entraînement",
+        "startWorkout": "Commencer un Entraînement",
+        "logWorkout": "Logger un Entraînement",
+        "exercises": "Exercices",
+        "sets": "Séries",
+        "reps": "Répétitions",
+        "weight": "Poids",
+        "duration": "Durée",
+        "rest": "Repos"
+    },
+    "settings": {
+        "title": "Paramètres",
+        "dailyGoals": "Objectifs Quotidiens",
+        "notifications": "Notifications",
+        "privacy": "Confidentialité",
+        "language": "Langue",
+        "theme": "Thème",
+        "account": "Compte"
+    },
+    "ai": {
+        "coach": "Coach IA",
+        "askAnything": "Posez votre question...",
+        "generating": "Génération en cours..."
+    }
+}

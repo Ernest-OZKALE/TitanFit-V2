@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - alert [ref=e12]
+  - generic [ref=e13]:
+    - generic [ref=e23]:
+      - text: // @ts-ignore
+      - generic [ref=e24]:
+        - link "TitanFit" [ref=e25] [cursor=pointer]:
+          - /url: /
+          - heading "TitanFit" [level=1] [ref=e26]
+        - paragraph [ref=e27]: Commencez Votre Transformation.
+        - paragraph [ref=e28]: Rejoignez l'élite et propulsez vos performances au niveau supérieur grâce à notre technologie IA.
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: ✓
+            - generic [ref=e32]:
+              - heading "Gratuit Pour Toujours" [level=3] [ref=e33]
+              - paragraph [ref=e34]: Aucune carte bancaire requise pour démarrer
+          - generic [ref=e35]:
+            - generic [ref=e36]: ✓
+            - generic [ref=e37]:
+              - heading "Propulsé par l'IA" [level=3] [ref=e38]
+              - paragraph [ref=e39]: Coaching intelligent adaptatif
+          - generic [ref=e40]:
+            - generic [ref=e41]: ✓
+            - generic [ref=e42]:
+              - heading "Confidentialité Totale" [level=3] [ref=e43]
+              - paragraph [ref=e44]: Vos données restent privées
+    - generic [ref=e45]:
+      - link "Retour à l'accueil" [ref=e46] [cursor=pointer]:
+        - /url: /
+        - button "Retour à l'accueil" [ref=e47]:
+          - img
+          - text: Retour à l'accueil
+      - text: // @ts-ignore
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - heading "Créer un compte" [level=2] [ref=e50]
+          - paragraph [ref=e51]: Rejoignez la légende en quelques secondes.
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: Nom d'utilisateur
+            - textbox "Nom d'utilisateur" [ref=e55]:
+              - /placeholder: titan_warrior
+          - generic [ref=e56]:
+            - generic [ref=e57]: Email
+            - textbox "Email" [ref=e58]:
+              - /placeholder: titan@exemple.com
+          - generic [ref=e59]:
+            - generic [ref=e60]: Mot de passe
+            - textbox "Mot de passe" [ref=e61]:
+              - /placeholder: ••••••••
+            - paragraph [ref=e62]: Minimum 6 caractères
+          - button "Rejoindre Gratuitement" [ref=e63] [cursor=pointer]
+        - paragraph [ref=e65]:
+          - text: Vous avez déjà un compte ?
+          - link "Se connecter" [ref=e66] [cursor=pointer]:
+            - /url: /login
+```

@@ -1,0 +1,93 @@
+{
+    "common": {
+        "appName": "TitanFit",
+        "loading": "Loading...",
+        "save": "Save",
+        "cancel": "Cancel",
+        "back": "Back",
+        "next": "Next",
+        "submit": "Submit",
+        "delete": "Delete",
+        "edit": "Edit",
+        "close": "Close",
+        "search": "Search",
+        "filter": "Filter",
+        "all": "All",
+        "none": "None",
+        "yes": "Yes",
+        "no": "No",
+        "error": "Error",
+        "success": "Success"
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "nutrition": "Nutrition",
+        "training": "Training",
+        "progress": "Progress",
+        "social": "Social",
+        "settings": "Settings",
+        "profile": "Profile",
+        "logout": "Logout"
+    },
+    "auth": {
+        "login": "Sign In",
+        "signup": "Sign Up",
+        "email": "Email",
+        "password": "Password",
+        "forgotPassword": "Forgot password?",
+        "welcomeBack": "Welcome Back",
+        "createAccount": "Create Account",
+        "alreadyHaveAccount": "Already have an account?",
+        "noAccount": "Don't have an account?",
+        "joinElite": "Join the Elite"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "welcome": "Welcome",
+        "todaySummary": "Today's Summary",
+        "calories": "Calories",
+        "protein": "Protein",
+        "water": "Water",
+        "workouts": "Workouts",
+        "streak": "Streak",
+        "days": "days"
+    },
+    "nutrition": {
+        "title": "Nutrition",
+        "mealLog": "Meal Log",
+        "addMeal": "Add Meal",
+        "breakfast": "Breakfast",
+        "lunch": "Lunch",
+        "dinner": "Dinner",
+        "snack": "Snack",
+        "macros": "Macros",
+        "carbs": "Carbs",
+        "fat": "Fat",
+        "fiber": "Fiber"
+    },
+    "training": {
+        "title": "Training",
+        "startWorkout": "Start Workout",
+        "logWorkout": "Log Workout",
+        "exercises": "Exercises",
+        "sets": "Sets",
+        "reps": "Reps",
+        "weight": "Weight",
+        "duration": "Duration",
+        "rest": "Rest"
+    },
+    "settings": {
+        "title": "Settings",
+        "dailyGoals": "Daily Goals",
+        "notifications": "Notifications",
+        "privacy": "Privacy",
+        "language": "Language",
+        "theme": "Theme",
+        "account": "Account"
+    },
+    "ai": {
+        "coach": "AI Coach",
+        "askAnything": "Ask anything...",
+        "generating": "Generating..."
+    }
+}

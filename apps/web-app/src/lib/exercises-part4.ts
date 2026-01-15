@@ -1,0 +1,130 @@
+import type { Exercise } from './exercise-types';
+
+// SPECIALIZED EXERCISES - Olympic Lifting (15+)
+export const OLYMPIC_EXERCISES: Exercise[] = [
+    { id: 'squat-clean', name: 'Squat Clean', targetMuscles: ['quad-rectus', 'traps-upper'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Clean complet avec squat profond'] },
+    { id: 'squat-snatch', name: 'Squat Snatch', targetMuscles: ['delt-front', 'quad-rectus'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Arraché complet avec squat'] },
+    { id: 'hang-snatch', name: 'Hang Snatch', targetMuscles: ['delt-front'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Arraché depuis mi-cuisse'] },
+    { id: 'muscle-snatch', name: 'Muscle Snatch', targetMuscles: ['delt-front', 'traps-upper'], equipment: ['barbell'], difficulty: 'intermediate', category: 'strength', instructions: ['Arraché sans squat'] },
+    { id: 'snatch-pull', name: 'Snatch Pull', targetMuscles: ['traps-upper', 'back'], equipment: ['barbell'], difficulty: 'intermediate', category: 'strength', instructions: ['Tirage arraché sans réception'] },
+    { id: 'clean-pull', name: 'Clean Pull', targetMuscles: ['traps-upper', 'back'], equipment: ['barbell'], difficulty: 'intermediate', category: 'strength', instructions: ['Tirage épaulé sans réception'] },
+    { id: 'split-jerk', name: 'Split Jerk', targetMuscles: ['delt-front', 'quad-rectus'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Jeté avec fente'] },
+    { id: 'push-jerk', name: 'Push Jerk', targetMuscles: ['delt-front'], equipment: ['barbell'], difficulty: 'intermediate', category: 'strength', instructions: ['Jeté sans fente'] },
+    { id: 'squat-jerk', name: 'Squat Jerk', targetMuscles: ['delt-front', 'quad-rectus'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Jeté avec réception squat'] },
+    { id: 'overhead-squat', name: 'Overhead Squat', targetMuscles: ['quad-rectus', 'delt-front'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Squat avec barre au-dessus'] },
+    { id: 'snatch-balance', name: 'Snatch Balance', targetMuscles: ['delt-front', 'quad-rectus'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Drop sous la barre depuis épaules'] },
+    { id: 'sotts-press', name: 'Sotts Press', targetMuscles: ['delt-front'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Press dans le squat profond'] },
+    { id: 'block-clean', name: 'Block Clean', targetMuscles: ['traps-upper'], equipment: ['barbell'], difficulty: 'intermediate', category: 'strength', instructions: ['Clean depuis les blocks'] },
+    { id: 'block-snatch', name: 'Block Snatch', targetMuscles: ['delt-front'], equipment: ['barbell'], difficulty: 'intermediate', category: 'strength', instructions: ['Snatch depuis les blocks'] },
+    { id: 'deficit-clean', name: 'Deficit Clean', targetMuscles: ['back', 'quad-rectus'], equipment: ['barbell'], difficulty: 'advanced', category: 'strength', instructions: ['Clean debout sur plateforme'] },
+];
+
+// SPECIALIZED EXERCISES - Calisthenics (20+)
+export const CALISTHENICS_EXERCISES: Exercise[] = [
+    { id: 'handstand-hold', name: 'Handstand Hold', targetMuscles: ['delt-front', 'abs-rectus'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Équilibre mains au mur ou libre'] },
+    { id: 'handstand-pushup', name: 'Handstand Push-ups', targetMuscles: ['delt-front', 'triceps-long'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Pompes en équilibre'] },
+    { id: 'pike-pushup-elevated', name: 'Pike Push-ups Pieds Élevés', targetMuscles: ['delt-front'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Pieds sur box, hanches hautes'] },
+    { id: 'front-lever-hold', name: 'Front Lever Hold', targetMuscles: ['lats', 'abs-rectus'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Corps horizontal suspendu face vers le haut'] },
+    { id: 'back-lever-hold', name: 'Back Lever Hold', targetMuscles: ['delt-front', 'chest-mid'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Corps horizontal suspendu face vers le bas'] },
+    { id: 'planche-lean', name: 'Planche Lean', targetMuscles: ['delt-front', 'abs-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Penchez en avant en planche'] },
+    { id: 'tuck-planche', name: 'Tuck Planche', targetMuscles: ['delt-front'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Planche avec genoux au torse'] },
+    { id: 'straddle-planche', name: 'Straddle Planche', targetMuscles: ['delt-front'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Planche jambes écartées'] },
+    { id: 'skin-the-cat', name: 'Skin The Cat', targetMuscles: ['lats', 'delt-front'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Rotation complète aux anneaux'] },
+    { id: 'human-flag-hold', name: 'Human Flag', targetMuscles: ['obliques', 'lats'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Corps horizontal sur poteau'] },
+    { id: 'ring-dips', name: 'Dips aux Anneaux', targetMuscles: ['chest-lower', 'triceps-long'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Dips sur anneaux instables'] },
+    { id: 'ring-support-hold', name: 'Support Anneaux', targetMuscles: ['triceps-long', 'abs-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Tenez position haute aux anneaux'] },
+    { id: 'ring-rows', name: 'Row aux Anneaux', targetMuscles: ['lats'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'strength', instructions: ['Rowing avec anneaux'] },
+    { id: 'ring-pushups', name: 'Pompes aux Anneaux', targetMuscles: ['chest-mid'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Pompes sur anneaux instables'] },
+    { id: 'l-sit-hold', name: 'L-Sit Hold', targetMuscles: ['abs-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Corps en L suspendu'] },
+    { id: 'v-sit-hold', name: 'V-Sit Hold', targetMuscles: ['abs-rectus'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Corps en V suspendu'] },
+    { id: 'manna', name: 'Manna', targetMuscles: ['abs-rectus', 'delt-rear'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['V-sit inversé, jambes derrière'] },
+    { id: 'iron-cross', name: 'Iron Cross', targetMuscles: ['chest-mid', 'biceps-short'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Croix de fer aux anneaux'] },
+    { id: 'hefesto', name: 'Hefesto', targetMuscles: ['biceps-short', 'delt-front'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Curl géant aux anneaux'] },
+    { id: 'impossible-dip', name: 'Impossible Dip', targetMuscles: ['triceps-long'], equipment: ['bodyweight'], difficulty: 'advanced', category: 'strength', instructions: ['Dip en arrière depuis barre'] },
+];
+
+// SPECIALIZED EXERCISES - Mobility/Rehab (20+)
+export const MOBILITY_EXERCISES: Exercise[] = [
+    { id: 'banded-shoulder-distraction', name: 'Distraction Épaule Bande', targetMuscles: ['delt-front'], equipment: ['band'], difficulty: 'beginner', category: 'stretching', instructions: ['Bande attachée, tirez pour décompression'] },
+    { id: 'banded-hip-distraction', name: 'Distraction Hanche Bande', targetMuscles: ['glutes-max'], equipment: ['band'], difficulty: 'beginner', category: 'stretching', instructions: ['Bande autour de la hanche, tirez'] },
+    { id: 'sleeper-stretch', name: 'Sleeper Stretch', targetMuscles: ['rotator-cuff'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Couché sur le côté, rotation interne'] },
+    { id: 'cross-body-stretch', name: 'Étirement Cross Body', targetMuscles: ['delt-rear'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Bras devant, tirez vers l épaule opposée'] },
+    { id: 'external-rotation-stretch', name: 'Rotation Externe Stretch', targetMuscles: ['rotator-cuff'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Coude plié, rotation vers l extérieur'] },
+    { id: 'butchers-block', name: 'Butcher s Block', targetMuscles: ['lats', 'triceps-long'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Coudes sur bloc, tirez les hanches'] },
+    { id: 'pec-minor-release', name: 'Release Petit Pectoral', targetMuscles: ['chest-upper'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Balle sous la clavicule'] },
+    { id: 'lat-release', name: 'Release Dorsaux Balle', targetMuscles: ['lats'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Balle sous l aisselle'] },
+    { id: 'trap-release', name: 'Release Trapèzes Balle', targetMuscles: ['traps-upper'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Balle sur les trapèzes'] },
+    { id: 'glute-release', name: 'Release Fessiers Balle', targetMuscles: ['glutes-max'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Asseyez-vous sur la balle'] },
+    { id: 'piriformis-release', name: 'Release Piriforme', targetMuscles: ['glutes-max'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Balle profonde dans le fessier'] },
+    { id: 'it-band-release', name: 'Release IT Band Rouleau', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'stretching', instructions: ['Roulez sur le côté de la cuisse'] },
+    { id: 'tfl-release', name: 'Release TFL', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Balle sur le tenseur fasciae latae'] },
+    { id: 'adductor-release', name: 'Release Adducteurs', targetMuscles: ['adductors'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Rouleau à l intérieur de la cuisse'] },
+    { id: 'plantar-fascia-release', name: 'Release Fascia Plantaire', targetMuscles: ['calves'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Balle sous le pied'] },
+    { id: 'cat-camel', name: 'Cat Camel', targetMuscles: ['back'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Alternez dos rond et creusé'] },
+    { id: 'spine-waves', name: 'Ondulations Spinales', targetMuscles: ['back'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Mouvement fluide de la colonne'] },
+    { id: 'controlled-articular-rotations-shoulder', name: 'CARs Épaule', targetMuscles: ['delt-front'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Cercles contrôlés de l épaule'] },
+    { id: 'controlled-articular-rotations-hip', name: 'CARs Hanche', targetMuscles: ['glutes-max'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Cercles contrôlés de la hanche'] },
+    { id: 'controlled-articular-rotations-spine', name: 'CARs Colonne', targetMuscles: ['back'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'stretching', instructions: ['Rotations contrôlées du tronc'] },
+];
+
+// SPECIALIZED EXERCISES - Sport-Specific (20+)
+export const SPORT_EXERCISES: Exercise[] = [
+    { id: 'box-drill', name: 'Box Drill', targetMuscles: ['calves'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'cardio', instructions: ['Déplacements en carré'] },
+    { id: 'pro-agility', name: 'Pro Agility 5-10-5', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['5m-10m-5m avec changements'] },
+    { id: 't-drill', name: 'T Drill', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Déplacements en T'] },
+    { id: 'l-drill', name: 'L Drill', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Déplacements en L'] },
+    { id: 'cone-drill', name: 'Cone Drill', targetMuscles: ['calves'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'cardio', instructions: ['Slalom entre les cônes'] },
+    { id: 'lateral-bounds', name: 'Bonds Latéraux', targetMuscles: ['glutes-med'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Sautez latéralement d un pied à l autre'] },
+    { id: 'single-leg-hops', name: 'Sauts Unipodaux', targetMuscles: ['calves'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Sautez sur une jambe'] },
+    { id: 'vertical-jump', name: 'Vertical Jump', targetMuscles: ['quad-rectus', 'calves'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'cardio', instructions: ['Saut vertical maximal'] },
+    { id: 'approach-jump', name: 'Saut avec Élan', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Quelques pas puis sautez'] },
+    { id: 'reactive-jump', name: 'Saut Réactif', targetMuscles: ['calves'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Drop and rebond immédiat'] },
+    { id: 'hurdle-hops', name: 'Sauts de Haies', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Sautez par-dessus les mini haies'] },
+    { id: 'bounds', name: 'Bounds', targetMuscles: ['quad-rectus', 'glutes-max'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Grandes foulées explosives'] },
+    { id: 'sprint-start', name: 'Départ Sprint', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'cardio', instructions: ['Travail de la phase d accélération'] },
+    { id: 'resisted-sprint', name: 'Sprint Résisté', targetMuscles: ['quad-rectus', 'glutes-max'], equipment: ['band'], difficulty: 'intermediate', category: 'cardio', instructions: ['Sprint avec bande ou parachute'] },
+    { id: 'overspeed-sprint', name: 'Sprint Assisté', targetMuscles: ['quad-rectus'], equipment: ['band'], difficulty: 'intermediate', category: 'cardio', instructions: ['Sprint en descente ou tiré'] },
+    { id: 'tempo-runs', name: 'Tempo Runs', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'cardio', instructions: ['Course à 70-75% intensité'] },
+    { id: 'fartlek', name: 'Fartlek', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Variations de vitesse libres'] },
+    { id: 'hill-sprints', name: 'Sprints en Côte', targetMuscles: ['glutes-max', 'calves'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Sprints sur pente'] },
+    { id: 'downhill-sprints', name: 'Sprints en Descente', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'cardio', instructions: ['Travail de vitesse supramaximale'] },
+    { id: 'med-ball-chest-pass', name: 'Passe Poitrine Medball', targetMuscles: ['chest-mid'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'cardio', instructions: ['Lancez explosif depuis la poitrine'] },
+];
+
+// SPECIALIZED EXERCISES - Isometrics (15+)
+export const ISOMETRIC_EXERCISES: Exercise[] = [
+    { id: 'iso-squat-hold', name: 'Squat Isométrique', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'strength', instructions: ['Tenez position squat'] },
+    { id: 'wall-sit', name: 'Chaise au Mur', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'strength', instructions: ['Dos au mur, cuisses parallèles'] },
+    { id: 'iso-lunge-hold', name: 'Fente Isométrique', targetMuscles: ['quad-rectus'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'strength', instructions: ['Tenez position fente'] },
+    { id: 'iso-pushup-hold', name: 'Pompe Isométrique', targetMuscles: ['chest-mid'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'strength', instructions: ['Tenez en bas de la pompe'] },
+    { id: 'iso-pullup-hold', name: 'Traction Isométrique', targetMuscles: ['lats'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Tenez en haut de la traction'] },
+    { id: 'flexed-arm-hang', name: 'Suspension Bras Fléchis', targetMuscles: ['biceps-short', 'lats'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Menton au-dessus de la barre'] },
+    { id: 'iso-curl-hold', name: 'Curl Isométrique', targetMuscles: ['biceps-short'], equipment: ['dumbbell'], difficulty: 'beginner', category: 'strength', instructions: ['Tenez à 90 degrés'] },
+    { id: 'iso-dip-hold', name: 'Dip Isométrique', targetMuscles: ['triceps-long'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Tenez en bas du dip'] },
+    { id: 'iso-row-hold', name: 'Row Isométrique', targetMuscles: ['lats'], equipment: ['cable'], difficulty: 'beginner', category: 'strength', instructions: ['Tenez la contraction'] },
+    { id: 'iso-calf-raise-hold', name: 'Mollet Isométrique', targetMuscles: ['calves'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'strength', instructions: ['Tenez sur la pointe'] },
+    { id: 'iso-shrug-hold', name: 'Shrug Isométrique', targetMuscles: ['traps-upper'], equipment: ['dumbbell'], difficulty: 'beginner', category: 'strength', instructions: ['Tenez les épaules haussées'] },
+    { id: 'iso-deadlift-hold', name: 'Soulevé Isométrique', targetMuscles: ['back', 'glutes-max'], equipment: ['barbell'], difficulty: 'intermediate', category: 'strength', instructions: ['Tenez la barre soulevée'] },
+    { id: 'horse-stance', name: 'Horse Stance', targetMuscles: ['quad-rectus', 'adductors'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Stance large et bas, arts martiaux'] },
+    { id: 'glute-bridge-hold', name: 'Glute Bridge Isométrique', targetMuscles: ['glutes-max'], equipment: ['bodyweight'], difficulty: 'beginner', category: 'strength', instructions: ['Tenez hanches hautes'] },
+    { id: 'copenhagen-hold', name: 'Copenhagen Hold', targetMuscles: ['adductors'], equipment: ['bodyweight'], difficulty: 'intermediate', category: 'strength', instructions: ['Planche latérale, jambe sur banc'] },
+];
+
+// MACHINE-SPECIFIC EXERCISES (15+)
+export const MACHINE_EXERCISES: Exercise[] = [
+    { id: 'smith-squat', name: 'Squat Smith Machine', targetMuscles: ['quad-rectus'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Barre guidée, pieds vers l avant'] },
+    { id: 'smith-lunges', name: 'Fentes Smith Machine', targetMuscles: ['quad-rectus', 'glutes-max'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Fentes avec barre guidée'] },
+    { id: 'smith-calf-raise', name: 'Mollets Smith Machine', targetMuscles: ['calves'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Montée de mollets sur cale'] },
+    { id: 'horizontal-leg-press', name: 'Presse Horizontale', targetMuscles: ['quad-rectus'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Presse position assise'] },
+    { id: 'vertical-leg-press', name: 'Presse Verticale', targetMuscles: ['quad-rectus'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Jambes vers le plafond'] },
+    { id: 'pendulum-squat', name: 'Pendulum Squat', targetMuscles: ['quad-rectus'], equipment: ['machine'], difficulty: 'intermediate', category: 'strength', instructions: ['Machine pendulaire, profond'] },
+    { id: 'belt-squat-machine', name: 'Belt Squat Machine', targetMuscles: ['quad-rectus'], equipment: ['machine'], difficulty: 'intermediate', category: 'strength', instructions: ['Squat sans charge sur le dos'] },
+    { id: 'sissy-squat-machine', name: 'Sissy Squat Machine', targetMuscles: ['quad-rectus'], equipment: ['machine'], difficulty: 'intermediate', category: 'strength', instructions: ['Isolation des quads extrême'] },
+    { id: 'standing-hip-extension', name: 'Extension Hanche Debout', targetMuscles: ['glutes-max'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Kickback à la machine'] },
+    { id: 'hip-thrust-machine', name: 'Hip Thrust Machine', targetMuscles: ['glutes-max'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Hip thrust guidé'] },
+    { id: 'rotary-calf', name: 'Rotary Calf Machine', targetMuscles: ['calves'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Machine rotative pour mollets'] },
+    { id: 'chest-press-incline-machine', name: 'Presse Pecs Inclinée', targetMuscles: ['chest-upper'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Développé incliné machine'] },
+    { id: 'chest-press-decline-machine', name: 'Presse Pecs Déclinée', targetMuscles: ['chest-lower'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Développé décliné machine'] },
+    { id: 'rear-delt-machine', name: 'Deltoïde Arrière Machine', targetMuscles: ['delt-rear'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Écarté inversé machine'] },
+    { id: 'low-row-machine', name: 'Rowing Bas Machine', targetMuscles: ['lats'], equipment: ['machine'], difficulty: 'beginner', category: 'strength', instructions: ['Tirage horizontal guidé'] },
+];

@@ -1,0 +1,60 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - alert [ref=e6]
+  - generic [ref=e7]:
+    - generic [ref=e17]:
+      - text: // @ts-ignore
+      - generic [ref=e18]:
+        - link "TitanFit" [ref=e19]:
+          - /url: /
+          - heading "TitanFit" [level=1] [ref=e20]
+        - paragraph [ref=e21]:
+          - text: Votre Voyage Fitness
+          - text: Commence Ici.
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]: 📊
+            - generic [ref=e25]:
+              - heading "Suivi Intelligent" [level=3] [ref=e26]
+              - paragraph [ref=e27]: Enregistrez vos repas et suivez vos macros
+          - generic [ref=e28]:
+            - generic [ref=e29]: 🤖
+            - generic [ref=e30]:
+              - heading "Coach IA" [level=3] [ref=e31]
+              - paragraph [ref=e32]: Conseils nutritionnels sur mesure
+          - generic [ref=e33]:
+            - generic [ref=e34]: 🏆
+            - generic [ref=e35]:
+              - heading "Mode Élite" [level=3] [ref=e36]
+              - paragraph [ref=e37]: Atteignez le sommet de votre potentiel
+    - generic [ref=e38]:
+      - link "Retour à l'accueil" [ref=e39]:
+        - /url: /
+        - button "Retour à l'accueil" [ref=e40] [cursor=pointer]:
+          - img
+          - text: Retour à l'accueil
+      - text: // @ts-ignore
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - heading "Bon retour" [level=2] [ref=e43]
+          - paragraph [ref=e44]: L'arène vous attend.
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: Email
+            - textbox "Email" [ref=e48]:
+              - /placeholder: titan@exemple.com
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - generic [ref=e51]: Mot de passe
+              - link "Oublié ?" [ref=e52]:
+                - /url: /forgot-password
+            - textbox "Mot de passe" [ref=e53]:
+              - /placeholder: ••••••••
+          - button "Se connecter" [ref=e54] [cursor=pointer]
+        - paragraph [ref=e56]:
+          - text: Pas encore de compte ?
+          - link "Rejoindre l'élite" [ref=e57]:
+            - /url: /signup
+```

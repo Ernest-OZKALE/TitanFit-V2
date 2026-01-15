@@ -1,0 +1,62 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - alert [ref=e11]
+  - generic [ref=e12]:
+    - generic [ref=e22]:
+      - text: // @ts-ignore
+      - generic [ref=e23]:
+        - link "TitanFit" [ref=e24] [cursor=pointer]:
+          - /url: /
+          - heading "TitanFit" [level=1] [ref=e25]
+        - paragraph [ref=e26]:
+          - text: Votre Voyage Fitness
+          - text: Commence Ici.
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]: 📊
+            - generic [ref=e30]:
+              - heading "Suivi Intelligent" [level=3] [ref=e31]
+              - paragraph [ref=e32]: Enregistrez vos repas et suivez vos macros
+          - generic [ref=e33]:
+            - generic [ref=e34]: 🤖
+            - generic [ref=e35]:
+              - heading "Coach IA" [level=3] [ref=e36]
+              - paragraph [ref=e37]: Conseils nutritionnels sur mesure
+          - generic [ref=e38]:
+            - generic [ref=e39]: 🏆
+            - generic [ref=e40]:
+              - heading "Mode Élite" [level=3] [ref=e41]
+              - paragraph [ref=e42]: Atteignez le sommet de votre potentiel
+    - generic [ref=e43]:
+      - link "Retour à l'accueil" [ref=e44] [cursor=pointer]:
+        - /url: /
+        - button "Retour à l'accueil" [ref=e45]:
+          - img
+          - text: Retour à l'accueil
+      - text: // @ts-ignore
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - heading "Bon retour" [level=2] [ref=e48]
+          - paragraph [ref=e49]: L'arène vous attend.
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: Email
+            - textbox "Email" [ref=e53]:
+              - /placeholder: titan@exemple.com
+          - generic [ref=e54]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: Mot de passe
+              - link "Oublié ?" [ref=e57] [cursor=pointer]:
+                - /url: /forgot-password
+            - textbox "Mot de passe" [ref=e58]:
+              - /placeholder: ••••••••
+          - button "Se connecter" [ref=e59] [cursor=pointer]
+        - paragraph [ref=e61]:
+          - text: Pas encore de compte ?
+          - link "Rejoindre l'élite" [active] [ref=e62] [cursor=pointer]:
+            - /url: /signup
+```

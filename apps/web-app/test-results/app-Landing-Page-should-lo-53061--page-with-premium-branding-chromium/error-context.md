@@ -1,0 +1,42 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - generic [ref=e10]:
+      - text: Compiling
+      - generic [ref=e11]:
+        - generic [ref=e12]: .
+        - generic [ref=e13]: .
+        - generic [ref=e14]: .
+  - alert [ref=e15]
+  - generic [ref=e16]:
+    - main [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e29]: TitanFit V2.0
+        - heading "FORGE YOUR LEGACY" [level=1] [ref=e30]:
+          - text: FORGE YOUR
+          - text: LEGACY
+        - paragraph [ref=e31]: L'excellence n'est pas un acte, c'est une habitude. Rejoignez l'élite avec le coaching IA le plus avancé au monde.
+        - generic [ref=e32]:
+          - link "Commencer Maintenant" [ref=e33] [cursor=pointer]:
+            - /url: /signup
+            - generic [ref=e35]:
+              - text: Commencer Maintenant
+              - img [ref=e36]
+          - link "Se Connecter" [ref=e38] [cursor=pointer]:
+            - /url: /login
+      - generic [ref=e41]:
+        - img [ref=e43]
+        - generic [ref=e45]:
+          - generic [ref=e46]: Progression
+          - generic [ref=e47]: +125%
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - img [ref=e54]
+          - generic [ref=e60]:
+            - generic [ref=e61]: Objectif
+            - generic [ref=e62]: Atteint
+        - paragraph [ref=e63]: Continuez sur cette lancée pour débloquer le mode Élite.
+    - contentinfo [ref=e64]: © 2024 TitanFit AI. All rights reserved.
+```

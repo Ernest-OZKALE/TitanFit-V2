@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "TitanFit",
+    "slug": "titanfit-expo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.titanfit.app",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "TitanFit utilise vos données Apple Santé pour suivre votre poids, vos pas, votre fréquence cardiaque et vos calories brûlées.",
+        "NSHealthUpdateUsageDescription": "TitanFit enregistre vos données nutritionnelles et d'hydratation dans Apple Santé.",
+        "NSCameraUsageDescription": "TitanFit utilise la caméra pour scanner les codes-barres des produits alimentaires.",
+        "NSPhotoLibraryUsageDescription": "TitanFit utilise vos photos pour les photos de progression.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "entitlements": {
+        "com.apple.developer.healthkit": true,
+        "com.apple.developer.healthkit.background-delivery": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.titanfit.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "272de77d-1a78-4bfc-8f43-ee486b065953"
+      }
+    },
+    "owner": "starwek",
+    "plugins": [
+      "react-native-health"
+    ]
+  }
+}

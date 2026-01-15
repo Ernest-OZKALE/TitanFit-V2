@@ -1,0 +1,48 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e6] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e7]:
+      - img [ref=e8]
+    - generic [ref=e11]:
+      - button "Open issues overlay" [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: "0"
+          - generic [ref=e15]: "1"
+        - generic [ref=e16]: Issue
+      - button "Collapse issues badge" [ref=e17]:
+        - img [ref=e18]
+  - alert [ref=e20]
+  - generic [ref=e31]:
+    - link "Retour à l'accueil" [ref=e32] [cursor=pointer]:
+      - /url: /
+      - button "Retour à l'accueil" [ref=e33]:
+        - img
+        - text: Retour à l'accueil
+    - text: // @ts-ignore
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - heading "Bon retour" [level=2] [ref=e36]
+        - paragraph [ref=e37]: L'arène vous attend.
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: Email
+          - textbox "Email" [ref=e41]:
+            - /placeholder: titan@exemple.com
+            - text: admin@titanfit.com
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: Mot de passe
+            - link "Oublié ?" [ref=e45] [cursor=pointer]:
+              - /url: /forgot-password
+          - textbox "Mot de passe" [ref=e46]:
+            - /placeholder: ••••••••
+            - text: TestPassword123!
+        - paragraph [ref=e48]: Invalid login credentials
+        - button "Se connecter" [ref=e49] [cursor=pointer]
+      - paragraph [ref=e51]:
+        - text: Pas encore de compte ?
+        - link "Rejoindre l'élite" [ref=e52] [cursor=pointer]:
+          - /url: /signup
+```
