@@ -1,17 +1,17 @@
--- TitanFit CMS Admin - Extended Database Schema
--- Run this in Supabase SQL Editor after the initial schema
+-- TitanFit CMS Admin - Schéma de Base de Données Étendu
+-- À exécuter dans l'éditeur SQL Supabase après le schéma initial.
 
 -- ============================================================================
--- FIRST: Add role column to profiles table
+-- 1. PROFILS : Ajout du système de rôles
 -- ============================================================================
 
 ALTER TABLE profiles ADD COLUMN IF NOT EXISTS role TEXT DEFAULT 'user';
 
--- Update existing users to have 'user' role
+-- Mise à jour des utilisateurs existants vers le rôle 'user' par défaut
 UPDATE profiles SET role = 'user' WHERE role IS NULL;
 
 -- ============================================================================
--- PRODUCTS (Supplements, Programs, Equipment)
+-- 2. PRODUITS (Suppléments, Programmes, Équipement)
 -- ============================================================================
 
 CREATE TABLE IF NOT EXISTS products (
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS products (
 );
 
 -- ============================================================================
--- ORDERS & ORDER ITEMS
+-- 3. COMMANDES & ARTICLES
 -- ============================================================================
 
 CREATE TABLE IF NOT EXISTS orders (
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS order_items (
 );
 
 -- ============================================================================
--- CONTENT MANAGEMENT (Blog Posts, Videos, Pages)
+-- 4. GESTION DE CONTENU (Articles Blog, Vidéos, Pages)
 -- ============================================================================
 
 CREATE TABLE IF NOT EXISTS content_posts (
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS content_posts (
 );
 
 -- ============================================================================
--- SITE SETTINGS
+-- 5. PARAMÈTRES DU SITE
 -- ============================================================================
 
 CREATE TABLE IF NOT EXISTS site_settings (
@@ -83,17 +83,17 @@ CREATE TABLE IF NOT EXISTS site_settings (
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Insert default settings (only if they don't exist)
+-- Insertion des paramètres par défaut (uniquement si inexistants)
 INSERT INTO site_settings (key, value, type, description) VALUES
-  ('site_name', 'TitanFit', 'string', 'Website name'),
-  ('site_description', 'Your Fitness Journey', 'string', 'Site tagline'),
-  ('currency', 'USD', 'string', 'Default currency'),
-  ('coins_per_dollar', '100', 'number', 'Conversion rate'),
-  ('maintenance_mode', 'false', 'boolean', 'Site maintenance status')
+  ('site_name', 'TitanFit', 'string', 'Nom du site Web'),
+  ('site_description', 'Votre Voyage Fitness', 'string', 'Slogan du site'),
+  ('currency', 'EUR', 'string', 'Devise par défaut'),
+  ('coins_per_euro', '100', 'number', 'Taux de conversion'),
+  ('maintenance_mode', 'false', 'boolean', 'Statut de maintenance du site')
 ON CONFLICT (key) DO NOTHING;
 
 -- ============================================================================
--- ROW LEVEL SECURITY
+-- 6. SÉCURITÉ (ROW LEVEL SECURITY)
 -- ============================================================================
 
 ALTER TABLE products ENABLE ROW LEVEL SECURITY;
@@ -102,7 +102,7 @@ ALTER TABLE order_items ENABLE ROW LEVEL SECURITY;
 ALTER TABLE content_posts ENABLE ROW LEVEL SECURITY;
 ALTER TABLE site_settings ENABLE ROW LEVEL SECURITY;
 
--- Drop existing policies if they exist
+-- Suppression des anciennes politiques pour éviter les doublons
 DROP POLICY IF EXISTS "Anyone can view active products" ON products;
 DROP POLICY IF EXISTS "Admins can manage products" ON products;
 DROP POLICY IF EXISTS "Users can view own orders" ON orders;
@@ -116,13 +116,13 @@ DROP POLICY IF EXISTS "Admins can manage posts" ON content_posts;
 DROP POLICY IF EXISTS "Anyone can view settings" ON site_settings;
 DROP POLICY IF EXISTS "Admins can manage settings" ON site_settings;
 
--- Products: Public read, admin write
+-- Produits : Lecture publique, écriture réservée aux admins
 CREATE POLICY "Anyone can view active products" ON products FOR SELECT USING (is_active = true);
 CREATE POLICY "Admins can manage products" ON products FOR ALL USING (
   EXISTS (SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'admin')
 );
 
--- Orders: Users see own, admins see all
+-- Commandes : Les utilisateurs voient les leurs, les admins voient tout
 CREATE POLICY "Users can view own orders" ON orders FOR SELECT USING (auth.uid() = user_id);
 CREATE POLICY "Admins can view all orders" ON orders FOR SELECT USING (
   EXISTS (SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'admin')
@@ -132,7 +132,7 @@ CREATE POLICY "Admins can manage orders" ON orders FOR ALL USING (
   EXISTS (SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'admin')
 );
 
--- Order items: Same as orders
+-- Articles de commande : Identique aux commandes
 CREATE POLICY "Users can view own order items" ON order_items FOR SELECT USING (
   EXISTS (SELECT 1 FROM orders WHERE id = order_id AND user_id = auth.uid())
 );
@@ -140,20 +140,20 @@ CREATE POLICY "Admins can manage order items" ON order_items FOR ALL USING (
   EXISTS (SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'admin')
 );
 
--- Content: Public read published, admin write
+-- Contenu : Lecture publique si publié, écriture réservée aux admins
 CREATE POLICY "Anyone can view published posts" ON content_posts FOR SELECT USING (status = 'published');
 CREATE POLICY "Admins can manage posts" ON content_posts FOR ALL USING (
   EXISTS (SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'admin')
 );
 
--- Settings: Public read, admin write
+-- Paramètres : Lecture publique, modification réservée aux admins
 CREATE POLICY "Anyone can view settings" ON site_settings FOR SELECT USING (true);
 CREATE POLICY "Admins can manage settings" ON site_settings FOR ALL USING (
   EXISTS (SELECT 1 FROM profiles WHERE id = auth.uid() AND role = 'admin')
 );
 
 -- ============================================================================
--- INDEXES FOR PERFORMANCE
+-- 7. OPTIMISATION (INDEXES)
 -- ============================================================================
 
 CREATE INDEX IF NOT EXISTS idx_profiles_role ON profiles(role);
@@ -166,6 +166,6 @@ CREATE INDEX IF NOT EXISTS idx_content_posts_status ON content_posts(status);
 CREATE INDEX IF NOT EXISTS idx_content_posts_slug ON content_posts(slug);
 
 -- ============================================================================
--- DONE! Now you can set a user as admin with:
--- UPDATE profiles SET role = 'admin' WHERE email = 'your@email.com';
+-- TERMINÉ ! Note : Pour nommer un admin :
+-- UPDATE profiles SET role = 'admin' WHERE email = 'votre@email.com';
 -- ============================================================================

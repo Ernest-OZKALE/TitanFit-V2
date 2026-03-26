@@ -1,56 +1,57 @@
-# 1. Force le script à se placer dans le bon dossier (indispensable pour Git)
-Set-Location "C:\Users\Starwek\Documents\MARVYN\TitanFit-V2\"
+# 🏛️ SYSTEME DE SAUVEGARDE AUTOMATIQUE - TITAN ARCHITECT
+# 1. Configuration du dossier de travail
+Set-Location "C:\Users\Ernest\Documents\MARVYN\site-clean\"
 
-# 2. Rediriger les erreurs vers un fichier log (pour tes troubles de l'attention, c'est un pense-bête idéal)
-$LogFile = "C:\Users\Starwek\Documents\MARVYN\TitanFit-V2\backup_log.txt"
+# 2. Configuration des logs
+$LogFile = "C:\Users\Ernest\Documents\MARVYN\site-clean\backup_log.txt"
 
 $currentBranch = git branch --show-current
 if ([string]::IsNullOrWhiteSpace($currentBranch)) {
-    Write-Host "Error: Not in a git repository or no branch selected." -ForegroundColor Red
+    Write-Host "Erreur : Vous n'êtes pas dans un dépôt Git valide." -ForegroundColor Red
     exit
 }
 
 Write-Host "==========================================" -ForegroundColor Cyan
-Write-Host "   TITANFIT V2 - AUTOMATIC BACKUP SYSTEM" -ForegroundColor Cyan
+Write-Host "   TITAN ARCHITECT - SAUVEGARDE AUTO" -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Cyan
-Write-Host "Target Branch: $currentBranch" -ForegroundColor Yellow
-Write-Host "Interval: 1 Hour" -ForegroundColor Yellow
-Write-Host "Press Ctrl+C to stop the script." -ForegroundColor White
+Write-Host "Branche cible   : $currentBranch" -ForegroundColor Yellow
+Write-Host "Intervalle      : 1 Heure" -ForegroundColor Yellow
+Write-Host "Appuyez sur Ctrl+C pour arrêter." -ForegroundColor White
 Write-Host ""
 
 while ($true) {
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    Write-Host "[$timestamp] status check..." -NoNewline
+    Write-Host "[$timestamp] Vérification du statut..." -NoNewline
 
-    # Check if there are changes to commit
+    # Vérification des changements
     $status = git status --porcelain
     if ($status) {
-        Write-Host " Changes detected." -ForegroundColor Green
+        Write-Host " Changements détectés." -ForegroundColor Green
         
         try {
-            Write-Host "  -> Adding files..."
+            Write-Host "  -> Ajout des fichiers..."
             git add .
             
-            Write-Host "  -> Committing..."
-            git commit -m "Auto-backup: $timestamp"
+            Write-Host "  -> Création du commit..."
+            git commit -m "Sauvegarde automatique : $timestamp"
             
-            Write-Host "  -> Pushing to GitHub..."
+            Write-Host "  -> Synchronisation GitHub..."
             git push origin $currentBranch
             
-            Write-Host "[$timestamp] ✅ Backup SUCCESSFUL!" -ForegroundColor Green
+            Write-Host "[$timestamp] ✅ Sauvegarde RÉUSSIE !" -ForegroundColor Green
         }
         catch {
-            Write-Host "[$timestamp] ❌ Backup FAILED. details below:" -ForegroundColor Red
+            Write-Host "[$timestamp] ❌ ÉCHEC de la sauvegarde. Détails ci-dessous :" -ForegroundColor Red
             Write-Error $_
         }
     } else {
-        Write-Host " No changes found. Skipping." -ForegroundColor Gray
+        Write-Host " Aucun changement. En attente." -ForegroundColor Gray
     }
 
     $nextRun = (Get-Date).AddHours(1).ToString("HH:mm:ss")
-    Write-Host "Sleeping... Next check at $nextRun" -ForegroundColor DarkGray
+    Write-Host "Veille... Prochaine vérification à $nextRun" -ForegroundColor DarkGray
     Write-Host ""
     
-    # Wait 3600 seconds (1 hour)
+    # Attente d'une heure (3600 secondes)
     Start-Sleep -Seconds 3600
 }
